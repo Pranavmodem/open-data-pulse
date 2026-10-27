@@ -90,6 +90,12 @@ class MarkdownTest(unittest.TestCase):
     def test_link_rejects_non_http_urls(self):
         self.assertEqual(link("x", "javascript:alert(1)"), "x")
         self.assertEqual(link("x", "https://a.b/c d"), "[x](<https://a.b/c%20d>)")
+        self.assertEqual(link("x", "https:///no-host"), "x")
+
+    def test_link_url_cannot_break_out_of_the_link(self):
+        out = link("x", "https://a.b/p>\n\n<img src=x onerror=alert(1)>\\")
+        self.assertEqual(out, "[x](<https://a.b/p%3E%0A%0A%3Cimg%20src=x%20onerror=alert(1)%3E%5C>)")
+        self.assertEqual(link("x", "https://a.b/q?a=1&b=%20"), "[x](<https://a.b/q?a=1&b=%20>)")
 
     def test_number(self):
         self.assertEqual([number(v) for v in (950, 12_345, 1_741_967, None)], ["950", "12.3K", "1.7M", "?"])
