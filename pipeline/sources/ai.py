@@ -70,7 +70,7 @@ class HuggingFaceDailyPapers(Source):
 
     def highlight(self, rows):
         top = rows[0]
-        return f"Top: {link(top['title'], top['url'])} ({top['upvotes']} upvotes)"
+        return f"Top: {link(top['title'], top['url'])} ({text(top['upvotes'], 20)} upvotes)"
 
 
 class HuggingFaceTrendingModels(Source):
@@ -97,7 +97,7 @@ class HuggingFaceTrendingModels(Source):
 
     def highlight(self, rows):
         top = rows[0]
-        return f"#1: {link(top['model_id'], top['url'])} ({top['task'] or 'model'}, {number(top['likes'])} likes)"
+        return f"#1: {link(top['model_id'], top['url'])} ({text(top['task'] or 'model', 40)}, {number(top['likes'])} likes)"
 
 
 class HuggingFaceTrendingDatasets(Source):

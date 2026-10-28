@@ -6,7 +6,7 @@ import time
 
 from pipeline import http
 from pipeline.core import Context, Source
-from pipeline.markdown import link, number
+from pipeline.markdown import link, number, text
 from pipeline.sources.common import collect, latest_release, release_highlight
 
 CATEGORY = "Data engineering"
@@ -128,7 +128,7 @@ class DevtoDataEngineering(Source):
 
     def highlight(self, rows):
         top = max(rows, key=lambda r: r["reactions"] or 0)
-        return f"Top: {link(top['title'], top['url'])} ({top['reactions']} reactions)"
+        return f"Top: {link(top['title'], top['url'])} ({text(top['reactions'], 20)} reactions)"
 
 
 SOURCES = [DataToolReleases(), PypiDownloads(), DockerPulls(), DevtoDataEngineering()]

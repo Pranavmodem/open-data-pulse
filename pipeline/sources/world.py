@@ -97,7 +97,7 @@ class AirQuality(Source):
     def highlight(self, rows):
         rated = [r for r in rows if r["us_aqi"] is not None]
         worst, best = max(rated, key=lambda r: r["us_aqi"]), min(rated, key=lambda r: r["us_aqi"])
-        return f"Worst air: {worst['city']} (AQI {worst['us_aqi']}). Cleanest: {best['city']} (AQI {best['us_aqi']})"
+        return f"Worst air: {worst['city']} (AQI {text(worst['us_aqi'], 20)}). Cleanest: {best['city']} (AQI {text(best['us_aqi'], 20)})"
 
 
 class Earthquakes(Source):
@@ -178,7 +178,7 @@ class FxRates(Source):
     def highlight(self, rows):
         rates = {r["currency"]: r["rate"] for r in rows}
         shown = ", ".join(f"{rates[c]:.4g} {c}" for c in ("EUR", "GBP", "INR", "JPY", "MXN") if c in rates)
-        return f"1 USD = {shown} (ECB, {rows[0]['date']})"
+        return f"1 USD = {shown} (ECB, {text(rows[0]['date'], 20)})"
 
 
 SOURCES = [CloudRegionWeather(), AirQuality(), Earthquakes(), NaturalEvents(), FxRates()]

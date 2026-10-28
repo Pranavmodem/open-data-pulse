@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 import tempfile
 import unittest
 from datetime import date
@@ -10,9 +11,10 @@ from pathlib import Path
 from pipeline import readme
 from pipeline.core import Context, Source, read_jsonl, read_manifest, manifest_path, run_all, write_manifest
 from pipeline.markdown import link, number, text
-from pipeline.sources import SOURCES
+from pipeline.sources import SOURCES, ai, data_eng, tech, world
 
 DAY = date(2026, 10, 27)
+EVIL = "<img src=x onerror=alert(1)> | [x](javascript:1)"
 
 
 class FakeSource(Source):
@@ -99,6 +101,24 @@ class MarkdownTest(unittest.TestCase):
 
     def test_number(self):
         self.assertEqual([number(v) for v in (950, 12_345, 1_741_967, None)], ["950", "12.3K", "1.7M", "?"])
+
+
+class HighlightTest(unittest.TestCase):
+    def test_feed_values_in_highlights_are_escaped(self):
+        cases = [
+            (ai.HuggingFaceTrendingModels(), {"model_id": "a/b", "url": "https://huggingface.co/a/b", "task": EVIL, "likes": 5}),
+            (ai.HuggingFaceDailyPapers(), {"title": EVIL, "url": "https://huggingface.co/papers/1", "upvotes": EVIL}),
+            (data_eng.DevtoDataEngineering(), {"title": EVIL, "url": "https://dev.to/x", "reactions": EVIL}),
+            (tech.HackerNewsFrontPage(), {"title": EVIL, "discussion_url": "https://news.ycombinator.com/item?id=1", "points": EVIL}),
+            (world.AirQuality(), {"city": "Dallas", "us_aqi": EVIL}),
+            (world.FxRates(), {"currency": "EUR", "rate": 0.92, "date": EVIL}),
+        ]
+        for source, row in cases:
+            with self.subTest(source.name):
+                out = source.highlight([row])
+                bare = re.sub(r"\]\(<[^<>\s]*>\)", "]", out)  # link targets are percent-encoded by link()
+                self.assertIn("img", bare)
+                self.assertNotRegex(bare, r"(?<!\\)[<>|]")
 
 
 class RegistryTest(unittest.TestCase):

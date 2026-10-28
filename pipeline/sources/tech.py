@@ -37,7 +37,7 @@ class HackerNewsFrontPage(Source):
 
     def highlight(self, rows):
         top = max(rows, key=lambda r: r["points"] or 0)
-        return f"Top: {link(top['title'], top['discussion_url'])} ({top['points']} points)"
+        return f"Top: {link(top['title'], top['discussion_url'])} ({text(top['points'], 20)} points)"
 
 
 class CloudStatus(Source):
@@ -108,7 +108,7 @@ class CisaKnownExploited(Source):
         newest = rows[0]
         week_ago = str(date.fromisoformat(newest["date_added"]) - timedelta(days=7))
         this_week = sum(r["date_added"] > week_ago for r in rows)
-        return (f"{this_week} added in the week to {newest['date_added']}. Newest: "
+        return (f"{this_week} added in the week to {text(newest['date_added'], 20)}. Newest: "
                 f"{link(newest['cve_id'], newest['url'])} ({text(newest['vendor'], 40)} {text(newest['product'], 40)})")
 
 
