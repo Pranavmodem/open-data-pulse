@@ -72,6 +72,24 @@ class RunnerTest(unittest.TestCase):
 
 
 class ReadmeTest(unittest.TestCase):
+    def test_template_badges_and_diagram_survive_render(self):
+        template = (Path(__file__).resolve().parents[1] / "README.template.md").read_text()
+        data_dir = Path(tempfile.mkdtemp())
+        sources = [FakeSource("one", [{}])]
+        write_manifest(data_dir, DAY, run_all(sources, Context(DAY, data_dir)), ["one"])
+        out = readme.render(template, sources, data_dir)
+        for fragment in (
+            "actions/workflows/ci.yml/badge.svg",
+            "actions/workflows/daily.yml/badge.svg",
+            "img.shields.io/github/license/Pranavmodem/open-data-pulse",
+            "img.shields.io/badge/python-3.12-blue",
+            "```mermaid",
+            "data/&lt;source&gt;/dt=&lt;date&gt;/data.jsonl",
+            "data/_runs/dt=&lt;date&gt;/manifest.json",
+        ):
+            self.assertIn(fragment, out)
+        self.assertNotIn("{{", out)
+
     def test_lists_every_source_and_escapes_feed_text(self):
         data_dir = Path(tempfile.mkdtemp())
         sources = [FakeSource("one", [{}]), FakeSource("two", error=RuntimeError("bad | <b>html</b>"))]
