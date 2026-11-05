@@ -1,5 +1,10 @@
 # open-data-pulse
 
+[![CI](https://github.com/Pranavmodem/open-data-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/Pranavmodem/open-data-pulse/actions/workflows/ci.yml)
+[![daily snapshot](https://github.com/Pranavmodem/open-data-pulse/actions/workflows/daily.yml/badge.svg)](https://github.com/Pranavmodem/open-data-pulse/actions/workflows/daily.yml)
+[![MIT license](https://img.shields.io/github/license/Pranavmodem/open-data-pulse)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue)](https://docs.python.org/3.12/)
+
 A small data pipeline that takes a daily snapshot of {{source_count}} public feeds: AI research and model hubs, agent frameworks, data-engineering tool releases and adoption, platform status, security advisories, and weather, air and hazards in the cities that host the big cloud regions.
 
 A GitHub Actions job runs it every morning. It fetches the feeds in parallel, retries what fails, writes one date-partitioned JSONL file per feed, records a run manifest, and rebuilds this README.
@@ -19,6 +24,29 @@ A GitHub Actions job runs it every morning. It fetches the feeds in parallel, re
 {{health}}
 
 ## How it works
+
+```mermaid
+flowchart LR
+  cron["daily.yml<br/>13:17 UTC"] --> sources
+
+  subgraph sources [Sources]
+    direction TB
+    ai["AI and agents"]
+    de["Data engineering"]
+    tech["Tech pulse"]
+    world["World signals"]
+    %% Keep the category order stable in the layout.
+    ai ~~~ de ~~~ tech ~~~ world
+  end
+
+  sources --> pool["thread pool, 6 workers<br/>urllib, retry with backoff"]
+  pool --> parts["data/&lt;source&gt;/dt=&lt;date&gt;/data.jsonl"]
+  pool --> manifest["data/_runs/dt=&lt;date&gt;/manifest.json"]
+  manifest --> digest["README digest"]
+  parts -.-> duck["DuckDB"]
+  parts --> commit["commit data/ and README.md"]
+  digest --> commit
+```
 
 - **One class per feed.** Each source in [`pipeline/sources/`](pipeline/sources) sets its metadata and implements `fetch()`, which returns rows, and `highlight()`, which writes its line in the digest.
 - **Failures stay contained.** Sources run in a thread pool, and HTTP calls retry with backoff. A source that still errors is marked `failed` in the manifest while the rest carry on. The job only fails when fewer than half the sources succeed.
