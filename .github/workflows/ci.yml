@@ -1,0 +1,33 @@
+name: ci
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -v tests
+
+  live-run:
+    name: live run against every feed
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Run the pipeline into a scratch folder
+        run: python -m pipeline.run --root "$RUNNER_TEMP/pulse"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
