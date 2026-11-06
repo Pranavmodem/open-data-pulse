@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-06",
+  "finished_at": "2026-11-06T20:00:14+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.5,
+      "highlight": "30 new papers. Newest: [SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization](<https://arxiv.org/abs/2611.08483v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.17,
+      "highlight": "Top: [Decoupled Predictive Decision Making: A Shared Conditional Predictor for Agents](<https://huggingface.co/papers/2611.02075>) (113 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.1,
+      "highlight": "#1: [moonshotai/Kimi-K3.1-Pro](<https://huggingface.co/moonshotai/Kimi-K3.1-Pro>) (image-text-to-text, 1.4K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.13,
+      "highlight": "#1: [nvidia/simready-assets](<https://huggingface.co/datasets/nvidia/simready-assets>) (1.4M downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 458,
+      "seconds": 0.18,
+      "highlight": "458 models, 5 new since the last run: Qwen: Qwen3.8 27B (batch), Meta: Muse Glimmer 30B (batch), DeepSeek: DeepSeek V4 Flash 0731 (batch) and 2 more",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.28,
+      "highlight": "Top new repo: [KKKKhazix/agent-autoloop](<https://github.com/KKKKhazix/agent-autoloop>) (3.6K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.51,
+      "highlight": "Latest: [LangGraph sdk==0.4.14](<https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.14>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 2.12,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 15.1M, `@anthropic-ai/sdk` 11.4M, `openai` 9.8M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 5.48,
+      "highlight": "Latest: [Apache Airflow 3.4.0](<https://github.com/apache/airflow/releases/tag/3.4.0>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 104.55,
+      "highlight": "Yesterday: `pandas` 32.0M, `pyarrow` 18.4M, `mcp` 13.8M, `anthropic` 8.5M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.19,
+      "highlight": "Most pulled since the last run: `library/postgres` (+26.0M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.37,
+      "highlight": "Top: [I got put in token quota jail. Then I looked at the logs.](<https://dev.to/modulaskhwaait/i-got-put-in-token-quota-jail-then-i-looked-at-the-logs-dha>) (1 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.81,
+      "highlight": "Top: [Blender's UI and Runtime: Much Faster Than GPUI](<https://news.ycombinator.com/item?id=50389333>) (598 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.93,
+      "highlight": "Degraded: [Snowflake: Partially Degraded Service](<https://status.snowflake.com>); [Cloudflare: Partial System Outage](<https://www.cloudflarestatus.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.47,
+      "highlight": "6 added in the week to 2026-11-04. Newest: [CVE-2024-27834](<https://nvd.nist.gov/vuln/detail/CVE-2024-27834>) (Apple Multiple Products)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.11,
+      "highlight": "Most read: [Abdul El-Sayed](<https://en.wikipedia.org/wiki/Abdul_El-Sayed>) (808.7K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (609.3K), [Russell Brand](<https://en.wikipedia.org/wiki/Russell_Brand>) (571.1K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.17,
+      "highlight": "Dallas 23°C / 13°C, overcast. Hottest: Mumbai (ap-south-1) 36°C. Coldest: Frankfurt (eu-central-1) 1°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.5,
+      "highlight": "Worst air: Mumbai (AQI 160). Cleanest: Columbus, OH (AQI 21)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.13,
+      "highlight": "29 quakes of M2.5+ in 24h. Largest: [M6.1 144 km SE of Hasaki, Japan](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000twg9>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 3,
+      "seconds": 0.43,
+      "highlight": "3 open events: 2 severe storms, 1 wildfires",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.3,
+      "highlight": "1 USD = 0.8957 EUR, 0.7471 GBP, 93.92 INR, 158.3 JPY, 18.7 MXN (ECB, 2026-11-06)",
+      "error": null
+    }
+  ]
+}

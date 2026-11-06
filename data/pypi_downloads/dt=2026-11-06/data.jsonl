@@ -1,0 +1,11 @@
+{"last_day": 31955402, "last_month": 546920076, "last_week": 176349869, "package": "pandas"}
+{"last_day": 18449697, "last_month": 334800780, "last_week": 112436410, "package": "pyarrow"}
+{"last_day": 13753027, "last_month": 235193557, "last_week": 77633378, "package": "mcp"}
+{"last_day": 8473028, "last_month": 150199657, "last_week": 50083571, "package": "anthropic"}
+{"last_day": 5303192, "last_month": 170457766, "last_week": 36170075, "package": "langchain"}
+{"last_day": 3636503, "last_month": 71820813, "last_week": 21867488, "package": "sqlglot"}
+{"last_day": 2985042, "last_month": 54924093, "last_week": 18228529, "package": "duckdb"}
+{"last_day": 2544530, "last_month": 50696797, "last_week": 15863920, "package": "polars"}
+{"last_day": 1786921, "last_month": 47831780, "last_week": 11158291, "package": "pyspark"}
+{"last_day": 443025, "last_month": 9159509, "last_week": 2494193, "package": "deltalake"}
+{"last_day": 246482, "last_month": 7196244, "last_week": 1567618, "package": "apache-airflow"}
