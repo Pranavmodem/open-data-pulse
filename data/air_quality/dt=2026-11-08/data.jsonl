@@ -1,0 +1,10 @@
+{"city": "Dallas", "measured_at": "2026-11-08T18:00", "ozone": 70.0, "pm10": 11.0, "pm2_5": 10.8, "region": "DFW", "us_aqi": 64}
+{"city": "Ashburn, VA", "measured_at": "2026-11-08T18:00", "ozone": 73.0, "pm10": 5.0, "pm2_5": 4.9, "region": "us-east-1", "us_aqi": 27}
+{"city": "Columbus, OH", "measured_at": "2026-11-08T18:00", "ozone": 57.0, "pm10": 4.1, "pm2_5": 4.0, "region": "us-east-2", "us_aqi": 49}
+{"city": "Boardman, OR", "measured_at": "2026-11-08T18:00", "ozone": 67.0, "pm10": 7.1, "pm2_5": 4.4, "region": "us-west-2", "us_aqi": 45}
+{"city": "São Paulo", "measured_at": "2026-11-08T18:00", "ozone": 59.0, "pm10": 5.9, "pm2_5": 4.7, "region": "sa-east-1", "us_aqi": 46}
+{"city": "Dublin", "measured_at": "2026-11-08T18:00", "ozone": 24.0, "pm10": 20.2, "pm2_5": 14.1, "region": "eu-west-1", "us_aqi": 57}
+{"city": "Frankfurt", "measured_at": "2026-11-08T18:00", "ozone": 11.0, "pm10": 32.6, "pm2_5": 28.5, "region": "eu-central-1", "us_aqi": 94}
+{"city": "Mumbai", "measured_at": "2026-11-08T18:00", "ozone": 104.0, "pm10": 48.4, "pm2_5": 43.4, "region": "ap-south-1", "us_aqi": 180}
+{"city": "Singapore", "measured_at": "2026-11-08T18:00", "ozone": 33.0, "pm10": 13.2, "pm2_5": 11.0, "region": "ap-southeast-1", "us_aqi": 56}
+{"city": "Tokyo", "measured_at": "2026-11-08T18:00", "ozone": 40.0, "pm10": 14.7, "pm2_5": 12.0, "region": "ap-northeast-1", "us_aqi": 74}

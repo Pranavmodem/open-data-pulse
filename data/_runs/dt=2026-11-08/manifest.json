@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-08",
+  "finished_at": "2026-11-08T18:24:10+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.39,
+      "highlight": "30 new papers. Newest: [SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization](<https://arxiv.org/abs/2611.08483v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.17,
+      "highlight": "Top: [From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence](<https://huggingface.co/papers/2611.05376>) (116 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.12,
+      "highlight": "#1: [speridlabs/idol](<https://huggingface.co/speridlabs/idol>) (image-to-3d, 1.3K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.11,
+      "highlight": "#1: [nvidia/simready-assets](<https://huggingface.co/datasets/nvidia/simready-assets>) (1.4M downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 461,
+      "seconds": 0.12,
+      "highlight": "461 models, 4 new since the last run: DeepSeek: DeepSeek V4.1 Flash 1017 (batch), Z.ai: GLM 5.2 (batch), Morph: Morph V3 Large (batch) and 1 more",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.42,
+      "highlight": "Top new repo: [KKKKhazix/agent-autoloop](<https://github.com/KKKKhazix/agent-autoloop>) (4.1K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 4.42,
+      "highlight": "Latest: [CrewAI 1.15.37](<https://github.com/crewAIInc/crewAI/releases/tag/1.15.37>) (1d ago)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.53,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 7.9M, `@anthropic-ai/sdk` 6.6M, `openai` 5.4M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 6.87,
+      "highlight": "Latest: [Apache Airflow 3.4.0](<https://github.com/apache/airflow/releases/tag/3.4.0>) (2d ago)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 20.69,
+      "highlight": "Yesterday: `pandas` 19.3M, `pyarrow` 10.9M, `openai` 9.7M, `mcp` 8.1M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.51,
+      "highlight": "Most pulled since the last run: `library/postgres` (+14.3M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 0.19,
+      "highlight": "Top: [Snowflake vs BigQuery vs Redshift: How to Compare Them](<https://dev.to/keshav07/snowflake-vs-bigquery-vs-redshift-how-to-compare-them-jc5>) (1 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.24,
+      "highlight": "Top: [Every Mac comes with an (undocumented) family member classifier](<https://news.ycombinator.com/item?id=50403097>) (814 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.93,
+      "highlight": "Degraded: [Snowflake: Partially Degraded Service](<https://status.snowflake.com>); [Cloudflare: Partial System Outage](<https://www.cloudflarestatus.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.14,
+      "highlight": "3 added in the week to 2026-11-06. Newest: [CVE-2026-19868](<https://nvd.nist.gov/vuln/detail/CVE-2026-19868>) (SonicWall SonicOS SSLVPN)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.2,
+      "highlight": "Most read: [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (785.2K), [Russell Brand](<https://en.wikipedia.org/wiki/Russell_Brand>) (507.8K), [Abdul El-Sayed](<https://en.wikipedia.org/wiki/Abdul_El-Sayed>) (437.1K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.57,
+      "highlight": "Dallas 21°C / 14°C, overcast. Hottest: Mumbai (ap-south-1) 37°C. Coldest: Columbus, OH (us-east-2) 0°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.56,
+      "highlight": "Worst air: Mumbai (AQI 180). Cleanest: Ashburn, VA (AQI 27)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 42,
+      "seconds": 0.06,
+      "highlight": "42 quakes of M2.5+ in 24h. Largest: [M5.8 central Mid-Atlantic Ridge](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000twun>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 7,
+      "seconds": 0.5,
+      "highlight": "7 open events: 5 sea and lake ice, 1 wildfires, 1 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.33,
+      "highlight": "1 USD = 0.8957 EUR, 0.7471 GBP, 93.92 INR, 158.3 JPY, 18.7 MXN (ECB, 2026-11-06)",
+      "error": null
+    }
+  ]
+}
