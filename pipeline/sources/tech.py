@@ -52,7 +52,9 @@ class CloudStatus(Source):
         "Snowflake": "https://status.snowflake.com",
         "Confluent Cloud": "https://status.confluent.cloud",
         "dbt Cloud": "https://status.getdbt.com",
-        "Datadog": "https://status.datadoghq.com",
+        # Datadog used to live here: status.datadoghq.com now serves its own app and answers
+        # 403 AccessDenied on every /api path, so it is dropped rather than reported dead daily.
+        "npm": "https://status.npmjs.org",
         "Cloudflare": "https://www.cloudflarestatus.com",
         "Vercel": "https://www.vercel-status.com",
         "Anthropic": "https://status.anthropic.com",
@@ -73,7 +75,7 @@ class CloudStatus(Source):
                 "url": page,
             }
 
-        return collect(self.PAGES.items(), one)
+        return collect(self.PAGES.items(), one, on_error=self.note_failure)
 
     def highlight(self, rows):
         degraded = [r for r in rows if r["indicator"] != "none"]
