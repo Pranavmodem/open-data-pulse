@@ -83,6 +83,8 @@ ORDER BY dt, package;
 ## Run it locally
 
 ```bash
+pip install -e .                            # optional; adds the open-data-pulse command
+open-data-pulse                             # same entry point as python -m pipeline.run
 python -m pipeline.run                      # every source, today's date
 python -m pipeline.run --only earthquakes   # one source
 python -m unittest discover tests

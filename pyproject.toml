@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-data-pulse"
+version = "0.1.0"
+description = "A daily snapshot pipeline over public data feeds."
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+authors = [{ name = "Pranav Modem", email = "pranavmodem@gmail.com" }]
+dependencies = []
+
+[project.scripts]
+open-data-pulse = "pipeline.run:main"
+
+[tool.setuptools.packages.find]
+include = ["pipeline*"]
