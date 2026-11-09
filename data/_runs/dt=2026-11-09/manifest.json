@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-09",
+  "finished_at": "2026-11-09T23:00:51+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 2.65,
+      "highlight": "30 new papers. Newest: [On Agentic Manipulation Policies](<https://arxiv.org/abs/2611.09892v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.15,
+      "highlight": "Top: [From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence](<https://huggingface.co/papers/2611.05376>) (121 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.11,
+      "highlight": "#1: [speridlabs/idol](<https://huggingface.co/speridlabs/idol>) (image-to-3d, 1.6K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.1,
+      "highlight": "#1: [nvidia/simready-assets](<https://huggingface.co/datasets/nvidia/simready-assets>) (1.5M downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 464,
+      "seconds": 0.12,
+      "highlight": "464 models, 5 new since the last run: Thinking Machines: Inkling 2 Small (free), Anthropic: Claude Fable 5.2, Anthropic: Claude Fable 5.2 (batch) and 2 more",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.6,
+      "highlight": "Top new repo: [KKKKhazix/agent-autoloop](<https://github.com/KKKKhazix/agent-autoloop>) (4.3K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.29,
+      "highlight": "Latest: [CrewAI 1.15.39](<https://github.com/crewAIInc/crewAI/releases/tag/1.15.39>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 2.41,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 7.7M, `@anthropic-ai/sdk` 6.3M, `openai` 5.1M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 5.47,
+      "highlight": "Latest: [Apache Airflow 3.4.0](<https://github.com/apache/airflow/releases/tag/3.4.0>) (3d ago)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 19.17,
+      "highlight": "Yesterday: `pandas` 18.1M, `pyarrow` 10.4M, `openai` 8.7M, `mcp` 7.4M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.46,
+      "highlight": "Most pulled since the last run: `library/postgres` (+26.5M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 19,
+      "seconds": 0.23,
+      "highlight": "Top: [Why an ID Check Let the Same PDF Into Our Pipeline Twice](<https://dev.to/utkarsh_gupta/why-an-id-check-let-the-same-pdf-into-our-pipeline-twice-18g5>) (0 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.99,
+      "highlight": "Top: [Claude Fable 5.2 and Mythos 5.2](<https://news.ycombinator.com/item?id=50429906>) (811 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.77,
+      "highlight": "Degraded: [Snowflake: Partially Degraded Service](<https://status.snowflake.com>); [Cloudflare: Partial System Outage](<https://www.cloudflarestatus.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.45,
+      "highlight": "7 added in the week to 2026-11-09. Newest: [CVE-2026-123218](<https://nvd.nist.gov/vuln/detail/CVE-2026-123218>) (IBM Aspera Faspex)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.12,
+      "highlight": "Most read: [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (716.4K), [.xxx](<https://en.wikipedia.org/wiki/.xxx>) (242.8K), [.xyz](<https://en.wikipedia.org/wiki/.xyz>) (232.3K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.55,
+      "highlight": "Dallas 22°C / 14°C, overcast. Hottest: Mumbai (ap-south-1) 36°C. Coldest: Columbus, OH (us-east-2) 4°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.49,
+      "highlight": "Worst air: Mumbai (AQI 152). Cleanest: Columbus, OH (AQI 28)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 48,
+      "seconds": 0.12,
+      "highlight": "48 quakes of M2.5+ in 24h. Largest: [M6.4 30 km WSW of Lata, Solomon Islands](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx16>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 9,
+      "seconds": 0.39,
+      "highlight": "9 open events: 5 sea and lake ice, 4 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.4,
+      "highlight": "1 USD = 0.8934 EUR, 0.7454 GBP, 93.93 INR, 157.9 JPY, 18.61 MXN (ECB, 2026-11-09)",
+      "error": null
+    }
+  ]
+}

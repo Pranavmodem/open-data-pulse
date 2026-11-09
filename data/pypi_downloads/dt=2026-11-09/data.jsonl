@@ -1,0 +1,16 @@
+{"last_day": 18058456, "last_month": 546920076, "last_week": 177568312, "package": "pandas"}
+{"last_day": 10398382, "last_month": 334800780, "last_week": 108126311, "package": "pyarrow"}
+{"last_day": 8735865, "last_month": 295856631, "last_week": 92006831, "package": "openai"}
+{"last_day": 7436955, "last_month": 235193557, "last_week": 79507189, "package": "mcp"}
+{"last_day": 5008315, "last_month": 150199657, "last_week": 50413636, "package": "anthropic"}
+{"last_day": 4301971, "last_month": 170457766, "last_week": 35271689, "package": "langchain"}
+{"last_day": 1978388, "last_month": 71820813, "last_week": 21835332, "package": "sqlglot"}
+{"last_day": 1545823, "last_month": 54924093, "last_week": 18118775, "package": "duckdb"}
+{"last_day": 1278817, "last_month": 47831780, "last_week": 11308540, "package": "pyspark"}
+{"last_day": 1252826, "last_month": 50696797, "last_week": 15147525, "package": "polars"}
+{"last_day": 555599, "last_month": 19160330, "last_week": 4484260, "package": "great-expectations"}
+{"last_day": 540715, "last_month": 20333278, "last_week": 6138921, "package": "pyiceberg"}
+{"last_day": 464339, "last_month": 22528136, "last_week": 5813183, "package": "dbt-core"}
+{"last_day": 202848, "last_month": 9159509, "last_week": 2528175, "package": "deltalake"}
+{"last_day": 147710, "last_month": 7886605, "last_week": 2612734, "package": "dagster"}
+{"last_day": 133908, "last_month": 7196244, "last_week": 1498866, "package": "apache-airflow"}
