@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-10",
+  "finished_at": "2026-11-10T20:29:30+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.43,
+      "highlight": "30 new papers. Newest: [Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Channels](<https://arxiv.org/abs/2611.12878v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.22,
+      "highlight": "Top: [Learning Heterogeneous Tactile Representation for General Dexterous Manipulation](<https://huggingface.co/papers/2611.12806>) (92 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.14,
+      "highlight": "#1: [speridlabs/idol](<https://huggingface.co/speridlabs/idol>) (image-to-3d, 1.8K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.15,
+      "highlight": "#1: [Angais/pixel-art-atlas-1.4m](<https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m>) (30.7K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 469,
+      "seconds": 0.11,
+      "highlight": "469 models, 5 new since the last run: Baidu: ERNIE-5.5-Flash-Preview, Baidu: ERNIE-Light-DT-1.0, Google: Gemini 4 Carbon and 2 more",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 6.05,
+      "highlight": "Top new repo: [KKKKhazix/agent-autoloop](<https://github.com/KKKKhazix/agent-autoloop>) (4.4K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.25,
+      "highlight": "Latest: [LangChain langchain-core==1.7.7](<https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.7>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 2.75,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 13.7M, `@anthropic-ai/sdk` 10.4M, `openai` 8.9M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 5.87,
+      "highlight": "Latest: [Apache Airflow 3.4.0](<https://github.com/apache/airflow/releases/tag/3.4.0>) (4d ago)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 19.02,
+      "highlight": "Yesterday: `pandas` 24.6M, `pyarrow` 14.1M, `openai` 12.9M, `mcp` 11.7M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.25,
+      "highlight": "Most pulled since the last run: `library/postgres` (+22.7M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.19,
+      "highlight": "Top: [A PostgreSQL mirror that loses nothing, even when the load fails](<https://dev.to/bejaouibechir/a-postgresql-mirror-that-loses-nothing-even-when-the-load-fails-24nc>) (1 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.34,
+      "highlight": "Top: [Amazon saves millions by replacing Sonnet 4.6 with Strands Decider](<https://news.ycombinator.com/item?id=50436640>) (660 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 2.2,
+      "highlight": "Degraded: [Snowflake: Partially Degraded Service](<https://status.snowflake.com>); [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.45,
+      "highlight": "12 added in the week to 2026-11-10. Newest: [CVE-2026-20320](<https://nvd.nist.gov/vuln/detail/CVE-2026-20320>) (Cisco BroadWorks)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.12,
+      "highlight": "Most read: [Russell Brand](<https://en.wikipedia.org/wiki/Russell_Brand>) (1.0M), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (830.9K), [Jensen Huang](<https://en.wikipedia.org/wiki/Jensen_Huang>) (733.4K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.51,
+      "highlight": "Dallas 25°C / 16°C, overcast. Hottest: Mumbai (ap-south-1) 35°C. Coldest: Ashburn, VA (us-east-1) 3°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.54,
+      "highlight": "Worst air: Mumbai (AQI 166). Cleanest: Boardman, OR (AQI 34)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 43,
+      "seconds": 0.15,
+      "highlight": "43 quakes of M2.5+ in 24h. Largest: [M5.6 43 km S of Puerto San José, Guatemala](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000txb8>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 9,
+      "seconds": 1.76,
+      "highlight": "9 open events: 5 sea and lake ice, 3 severe storms, 1 wildfires",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.29,
+      "highlight": "1 USD = 0.8917 EUR, 0.745 GBP, 93.93 INR, 158.2 JPY, 18.55 MXN (ECB, 2026-11-10)",
+      "error": null
+    }
+  ]
+}
