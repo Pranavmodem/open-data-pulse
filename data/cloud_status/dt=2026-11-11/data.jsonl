@@ -1,0 +1,8 @@
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "GitHub", "status": "All Systems Operational", "url": "https://www.githubstatus.com"}
+{"incident_titles": ["INC20000150"], "indicator": "minor", "open_incidents": 1, "provider": "Snowflake", "status": "Partially Degraded Service", "url": "https://status.snowflake.com"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "Confluent Cloud", "status": "All Systems Operational", "url": "https://status.confluent.cloud"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "dbt Cloud", "status": "All Systems Operational", "url": "https://status.getdbt.com"}
+{"incident_titles": ["Replicate Input Upload Issue", "Changes to Cloudflare Workers are not producing Event Subscription events", "Fedramp Customers have Delayed Purges"], "indicator": "minor", "open_incidents": 3, "provider": "Cloudflare", "status": "Partially Degraded Service", "url": "https://www.cloudflarestatus.com"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "Vercel", "status": "All Systems Operational", "url": "https://www.vercel-status.com"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "Anthropic", "status": "All Systems Operational", "url": "https://status.anthropic.com"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "OpenAI", "status": "All Systems Operational", "url": "https://status.openai.com"}

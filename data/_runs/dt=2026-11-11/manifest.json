@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-11",
+  "finished_at": "2026-11-11T20:14:40+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.51,
+      "highlight": "30 new papers. Newest: [Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations](<https://arxiv.org/abs/2611.14514v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.24,
+      "highlight": "Top: [Tree-Ising: Repairing Language Models with Bit-Level Ising Edits](<https://huggingface.co/papers/2611.14210>) (71 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.15,
+      "highlight": "#1: [xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic](<https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic>) (text-generation, 2.3K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.17,
+      "highlight": "#1: [Angais/pixel-art-atlas-1.4m](<https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m>) (41.6K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 466,
+      "seconds": 0.17,
+      "highlight": "466 models, 3 new since the last run: Baidu: ERNIE-5.5-Flash-Preview (free), KT: Mi:dm K 3.0 Pro, Motif Technologies: Motif 3",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.57,
+      "highlight": "Top new repo: [voyager-so/vork](<https://github.com/voyager-so/vork>) (1.4K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.34,
+      "highlight": "Latest: [LangChain langchain-core==1.8.0](<https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 2.62,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 15.1M, `@anthropic-ai/sdk` 11.7M, `openai` 10.1M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 5.96,
+      "highlight": "Latest: [Apache Airflow 3.4.0](<https://github.com/apache/airflow/releases/tag/3.4.0>) (5d ago)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 18.94,
+      "highlight": "Yesterday: `pandas` 26.0M, `pyarrow` 15.4M, `openai` 14.5M, `mcp` 12.8M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.28,
+      "highlight": "Most pulled since the last run: `library/postgres` (+25.2M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.19,
+      "highlight": "Top: [I built a free Data Engineering pipeline with dbt, DuckDB and GitHub Actions (no AWS)](<https://dev.to/dayan_elvisjahuirapilco/construi-un-pipeline-de-data-engineering-gratis-con-dbt-duckdb-y-github-actions-sin-aws-a3d>) (5 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.3,
+      "highlight": "Top: [Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h](<https://news.ycombinator.com/item?id=50452455>) (846 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 2.0,
+      "highlight": "Degraded: [Snowflake: Partially Degraded Service](<https://status.snowflake.com>); [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.29,
+      "highlight": "12 added in the week to 2026-11-10. Newest: [CVE-2026-20320](<https://nvd.nist.gov/vuln/detail/CVE-2026-20320>) (Cisco BroadWorks)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.11,
+      "highlight": "Most read: [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (840.9K), [Russell Brand](<https://en.wikipedia.org/wiki/Russell_Brand>) (545.7K), [Jensen Huang](<https://en.wikipedia.org/wiki/Jensen_Huang>) (542.6K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 2.75,
+      "highlight": "Dallas 26°C / 16°C, partly cloudy. Hottest: Mumbai (ap-south-1) 35°C. Coldest: Columbus, OH (us-east-2) 4°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.51,
+      "highlight": "Worst air: Mumbai (AQI 148). Cleanest: Boardman, OR (AQI 24)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 33,
+      "seconds": 0.14,
+      "highlight": "33 quakes of M2.5+ in 24h. Largest: [M5.1 80 km W of Panguna, Papua New Guinea](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000txm8>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 9,
+      "seconds": 3.5,
+      "highlight": "9 open events: 5 sea and lake ice, 3 severe storms, 1 wildfires",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.38,
+      "highlight": "1 USD = 0.8987 EUR, 0.7515 GBP, 93.69 INR, 159.2 JPY, 18.66 MXN (ECB, 2026-11-11)",
+      "error": null
+    }
+  ]
+}
