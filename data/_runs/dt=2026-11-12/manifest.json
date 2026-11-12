@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-12",
+  "finished_at": "2026-11-12T20:54:16+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 1.34,
+      "highlight": "30 new papers. Newest: [Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations](<https://arxiv.org/abs/2611.14514v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.13,
+      "highlight": "Top: [Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents](<https://huggingface.co/papers/2611.14320>) (65 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.07,
+      "highlight": "#1: [xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic](<https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic>) (text-generation, 4.7K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.09,
+      "highlight": "#1: [Angais/pixel-art-atlas-1.4m](<https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m>) (48.1K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 473,
+      "seconds": 0.09,
+      "highlight": "473 models, 7 new since the last run: Google: Gemini 4 Hydrogen, Google: Gemini 4 Hydrogen (batch), MoonshotAI: Kimi K3.1 Pro (batch) and 4 more",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.04,
+      "highlight": "Top new repo: [voyager-so/vork](<https://github.com/voyager-so/vork>) (1.5K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 2.26,
+      "highlight": "Latest: [LangGraph 1.2.21](<https://github.com/langchain-ai/langgraph/releases/tag/1.2.21>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 2.16,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 14.4M, `@anthropic-ai/sdk` 11.2M, `openai` 9.5M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.79,
+      "highlight": "Latest: [dbt Core v1.12.7](<https://github.com/dbt-labs/dbt/releases/tag/v1.12.7>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 88.74,
+      "highlight": "Yesterday: `pandas` 24.1M, `openai` 14.9M, `pyarrow` 14.0M, `mcp` 13.6M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 0.73,
+      "highlight": "Most pulled since the last run: `library/postgres` (+26.8M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 19,
+      "seconds": 0.18,
+      "highlight": "Top: [Is the Landing Zone in a Medallion Architecture Part of the Bronze Layer? Some Thoughts](<https://dev.to/aws-builders/is-the-landing-zone-in-a-medallion-architecture-part-of-the-bronze-layer-some-thoughts-268n>) (8 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.44,
+      "highlight": "Top: [Jensen Huang resigns](<https://news.ycombinator.com/item?id=50467087>) (2275 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.47,
+      "highlight": "Degraded: [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>); [Anthropic: Minor Service Outage](<https://status.anthropic.com>); [OpenAI: Partial System Degradation](<https://status.openai.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.2,
+      "highlight": "12 added in the week to 2026-11-10. Newest: [CVE-2026-20320](<https://nvd.nist.gov/vuln/detail/CVE-2026-20320>) (Cisco BroadWorks)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.04,
+      "highlight": "Most read: [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (776.7K), [Stacy Keach](<https://en.wikipedia.org/wiki/Stacy_Keach>) (563.0K), [Jensen Huang](<https://en.wikipedia.org/wiki/Jensen_Huang>) (341.6K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.11,
+      "highlight": "Dallas 25°C / 11°C, clear. Hottest: Mumbai (ap-south-1) 35°C. Coldest: Frankfurt (eu-central-1) 4°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.39,
+      "highlight": "Worst air: Mumbai (AQI 142). Cleanest: Dublin (AQI 27)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 34,
+      "seconds": 0.11,
+      "highlight": "34 quakes of M2.5+ in 24h. Largest: [M5.4 South Sandwich Islands region](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000txqr>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 12,
+      "seconds": 0.39,
+      "highlight": "12 open events: 5 sea and lake ice, 4 wildfires, 3 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.2,
+      "highlight": "1 USD = 0.9024 EUR, 0.7544 GBP, 94.04 INR, 159.7 JPY, 18.69 MXN (ECB, 2026-11-12)",
+      "error": null
+    }
+  ]
+}
