@@ -48,6 +48,8 @@ A GitHub Actions job runs it every morning. It fetches the feeds in parallel, re
 
 ## Sources
 
+`✅ ok` means every item was fetched, `⚠️ partial` that some items failed (so the row count is short and the digest says why), `⚪ no rows` that the feed had nothing today, and `❌ failed` that nothing came back at all.
+
 | Source | What it tracks | Rows | Status |
 | --- | --- | ---: | --- |
 | [`arxiv_agent_papers`](data/arxiv_agent_papers) | Newest arXiv papers on LLM agents, agentic systems and multi-agent work. [↗](<https://arxiv.org/>) | 30 | ✅ ok |
@@ -76,7 +78,7 @@ A GitHub Actions job runs it every morning. It fetches the feeds in parallel, re
 
 Last 9 runs, newest first.
 
-| Date | Sources ok | Rows | Failed |
+| Date | Sources ok | Rows | Problems |
 | --- | ---: | ---: | --- |
 | 2026-11-13 | 21/21 | 901 | none |
 | 2026-11-12 | 21/21 | 901 | none |
@@ -115,9 +117,11 @@ flowchart LR
 
 - **One class per feed.** Each source in [`pipeline/sources/`](pipeline/sources) sets its metadata and implements `fetch()`, which returns rows, and `highlight()`, which writes its line in the digest.
 - **Failures stay contained.** Sources run in a thread pool, and HTTP calls retry with backoff. A source that still errors is marked `failed` in the manifest while the rest carry on. The job only fails when fewer than half the sources succeed.
-- **Idempotent partitions.** Output goes to `data/<source>/dt=<YYYY-MM-DD>/data.jsonl`. Re-running a day overwrites that day's file, so reruns never duplicate rows.
+- **A short list is never silent.** A feed built from many items (repos, packages, status pages) fetches each one separately: one dead item does not sink the source, but it is recorded, the source is marked `partial`, and the README names the item that failed. The digest says "1 of 9 items failed" instead of letting an eight-row snapshot read as complete.
+- **Idempotent partitions.** Output goes to `data/<source>/dt=<YYYY-MM-DD>/data.jsonl`. Re-running a day overwrites that day's file, and removes it when the rerun returns no rows, so a snapshot never keeps rows the latest run did not fetch.
 - **Change detection.** A source can read its previous partition. The LLM catalog flags models that weren't there on the last run, and Docker pulls report the change since the last run.
-- **Run manifests.** `data/_runs/dt=<YYYY-MM-DD>/manifest.json` records the status, row count, duration and any error for every source.
+- **Run manifests.** `data/_runs/dt=<YYYY-MM-DD>/manifest.json` records the status, row count, duration and any error for every source, plus the individual items that failed inside a `partial` one.
+- **One pass over the template.** Feed text is escaped and substituted once, so a title that happens to look like a template placeholder is rendered as text rather than expanded into the page.
 - **No dependencies.** Python standard library only.
 
 ## Query the data

@@ -36,7 +36,7 @@ class DataToolReleases(Source):
     }
 
     def fetch(self, ctx: Context) -> list[dict]:
-        return collect(self.REPOS.items(), lambda item: latest_release(*item, ctx.day))
+        return collect(self.REPOS.items(), lambda item: latest_release(*item, ctx.day), on_error=self.note_failure)
 
     def highlight(self, rows):
         return release_highlight(rows)
@@ -61,7 +61,7 @@ class PypiDownloads(Source):
             return {"package": package, "last_day": d["last_day"], "last_week": d["last_week"],
                     "last_month": d["last_month"]}
 
-        return sorted(collect(self.PACKAGES, one), key=lambda r: r["last_day"], reverse=True)
+        return sorted(collect(self.PACKAGES, one, on_error=self.note_failure), key=lambda r: r["last_day"], reverse=True)
 
     def highlight(self, rows):
         return "Yesterday: " + ", ".join(f"`{r['package']}` {number(r['last_day'])}" for r in rows[:4])
@@ -94,7 +94,7 @@ class DockerPulls(Source):
                 "pulls_since_last_run": pulls - previous[image] if image in previous else None,
             }
 
-        return collect(self.IMAGES, one)
+        return collect(self.IMAGES, one, on_error=self.note_failure)
 
     def highlight(self, rows):
         moving = [r for r in rows if r["pulls_since_last_run"] is not None]

@@ -12,6 +12,7 @@ from pipeline import readme
 from pipeline.core import Context, Source, read_jsonl, read_manifest, manifest_path, run_all, write_manifest
 from pipeline.markdown import link, number, text
 from pipeline.sources import SOURCES, ai, data_eng, tech, world
+from pipeline.sources.common import collect
 
 DAY = date(2026, 10, 27)
 EVIL = "<img src=x onerror=alert(1)> | [x](javascript:1)"
@@ -32,6 +33,29 @@ class FakeSource(Source):
 
     def highlight(self, rows):
         return f"{len(rows)} rows"
+
+
+class ItemSource(Source):
+    """A source that fetches one item at a time, the way the real multi-item sources do."""
+
+    category = "Test"
+    homepage = "https://example.com"
+
+    def __init__(self, name: str, items: tuple[str, ...] = ("a", "b"), broken: tuple[str, ...] = ()):
+        self.name = self.title = self.description = name
+        self.items, self.broken = items, set(broken)
+
+    def fetch(self, ctx):
+        return collect(self.items, self._one, on_error=self.note_failure)
+
+    def _one(self, item: str) -> dict | None:
+        if item in self.broken:
+            raise RuntimeError(f"503 for {item}")
+        return {"item": item} if item != "skip" else None
+
+    def highlight(self, rows):
+        return f"{len(rows)} items"
+
 
 
 class RunnerTest(unittest.TestCase):
@@ -70,10 +94,62 @@ class RunnerTest(unittest.TestCase):
         results = read_manifest(manifest_path(self.data_dir, DAY))["results"]
         self.assertEqual([(r["source"], r["status"]) for r in results], [("a", "ok"), ("b", "failed")])
 
+    def test_rerun_that_returns_no_rows_clears_the_day(self):
+        ctx = Context(DAY, self.data_dir)
+        path = self.data_dir / "s" / "dt=2026-10-27" / "data.jsonl"
+        run_all([FakeSource("s", [{"v": 1}])], ctx)
+        self.assertTrue(path.exists())
+        run_all([FakeSource("s")], ctx)
+        self.assertFalse(path.exists(), "a rerun with no rows must not leave the earlier rows behind")
+        self.assertEqual(read_jsonl(path), [])
+
+    def test_failed_fetch_keeps_the_partition_it_already_had(self):
+        ctx = Context(DAY, self.data_dir)
+        run_all([FakeSource("s", [{"v": 1}])], ctx)
+        run_all([FakeSource("s", error=OSError("down"))], ctx)
+        self.assertEqual(read_jsonl(self.data_dir / "s" / "dt=2026-10-27" / "data.jsonl"), [{"v": 1}])
+
+
+class PartialResultTest(unittest.TestCase):
+    """Items that fail inside a source must not disappear into a clean-looking 'ok'."""
+
+    def setUp(self):
+        self.data_dir = Path(tempfile.mkdtemp())
+
+    def test_some_items_failing_is_a_partial_result(self):
+        (result,) = run_all([ItemSource("feeds", items=("a", "b", "c"), broken=("b",))], Context(DAY, self.data_dir))
+        self.assertEqual((result.status, result.rows, result.expected), ("partial", 2, 3))
+        self.assertEqual(len(result.errors), 1)
+        self.assertIn("b: RuntimeError: 503 for b", result.errors[0])
+        self.assertIsNone(result.error)
+
+    def test_every_item_failing_is_failed_not_empty(self):
+        (result,) = run_all([ItemSource("feeds", items=("a", "b"), broken=("a", "b"))], Context(DAY, self.data_dir))
+        self.assertEqual((result.status, result.rows), ("failed", 0))
+        self.assertIn("503 for a", result.error or "")
+
+    def test_items_that_return_nothing_are_not_failures(self):
+        (result,) = run_all([ItemSource("feeds", items=("a", "skip"))], Context(DAY, self.data_dir))
+        self.assertEqual((result.status, result.rows, result.expected, result.errors), ("ok", 1, None, []))
+
+    def test_failures_are_written_to_the_manifest(self):
+        ctx = Context(DAY, self.data_dir)
+        write_manifest(self.data_dir, DAY, run_all([ItemSource("feeds", items=("a", "b"), broken=("b",))], ctx), ["feeds"])
+        (record,) = read_manifest(manifest_path(self.data_dir, DAY))["results"]
+        self.assertEqual((record["status"], record["expected"], len(record["errors"])), ("partial", 2, 1))
+
+    def test_failures_do_not_leak_into_the_next_run_of_the_same_process(self):
+        source = ItemSource("feeds", items=("a", "b"), broken=("b",))
+        (first,) = run_all([source], Context(DAY, self.data_dir))
+        source.broken = set()
+        (second,) = run_all([source], Context(DAY, self.data_dir))
+        self.assertEqual((first.status, second.status, second.errors), ("partial", "ok", []))
+
+
 
 class ReadmeTest(unittest.TestCase):
     def test_template_badges_and_diagram_survive_render(self):
-        template = (Path(__file__).resolve().parents[1] / "README.template.md").read_text()
+        template = (Path(__file__).resolve().parents[1] / "README.template.md").read_text(encoding="utf-8")
         data_dir = Path(tempfile.mkdtemp())
         sources = [FakeSource("one", [{}])]
         write_manifest(data_dir, DAY, run_all(sources, Context(DAY, data_dir)), ["one"])
@@ -100,6 +176,32 @@ class ReadmeTest(unittest.TestCase):
         self.assertIn("❌ failed", out)
         self.assertIn(r"\<b\>html\</b\>", out)
         self.assertIn("| 2026-10-27 | 1/2 |", out)
+
+    def test_partial_sources_are_marked_in_the_table_digest_and_health(self):
+        data_dir = Path(tempfile.mkdtemp())
+        sources = [ItemSource("feeds", items=("a", "b"), broken=("b",))]
+        write_manifest(data_dir, DAY, run_all(sources, Context(DAY, data_dir)), ["feeds"])
+        out = readme.render("{{digest}}\n{{status}}\n{{health}}", sources, data_dir)
+        self.assertIn("⚠️ partial", out)
+        self.assertIn("1 of 2 items failed", out)
+        self.assertIn("_ (1 of 2 items failed)_".replace("_ (", "_("), out)
+        self.assertIn("| 2026-10-27 | 0/1 |", out)
+        self.assertIn("`feeds` ⚠️", out)
+
+    def test_feed_text_cannot_inject_a_placeholder(self):
+        data_dir = Path(tempfile.mkdtemp())
+
+        class Sneaky(ItemSource):
+            def highlight(self, rows):
+                return "sneaky {{health}} and {{source_count}}"
+
+        sources = [Sneaky("sneaky", items=("a",))]
+        write_manifest(data_dir, DAY, run_all(sources, Context(DAY, data_dir)), ["sneaky"])
+        out = readme.render("{{source_count}}|{{digest}}|{{health}}", sources, data_dir)
+        self.assertIn("sneaky {{health}} and {{source_count}}", out)
+        self.assertIn("| Date | Sources ok |", out)
+        self.assertTrue(out.startswith("1|"))
+
 
 
 class MarkdownTest(unittest.TestCase):
