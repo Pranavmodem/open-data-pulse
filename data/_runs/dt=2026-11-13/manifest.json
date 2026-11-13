@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-13",
+  "finished_at": "2026-11-13T20:31:41+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.55,
+      "highlight": "30 new papers. Newest: [Internalizing Investment Mandates: A Neurosymbolic RL Approach to Portfolio Allocation](<https://arxiv.org/abs/2611.17329v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.19,
+      "highlight": "Top: [SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models](<https://huggingface.co/papers/2611.15777>) (72 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.12,
+      "highlight": "#1: [xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic](<https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic>) (text-generation, 5.3K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.15,
+      "highlight": "#1: [Angais/pixel-art-atlas-1.4m](<https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m>) (53.5K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 471,
+      "seconds": 0.11,
+      "highlight": "471 models, 3 new since the last run: inclusionAI: Ling 3.2 Flash (free), Thinking Machines: Inkling 2 Small, Particle AI: Particle-1 (free)",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.51,
+      "highlight": "Top new repo: [DIYgod/pinky](<https://github.com/DIYgod/pinky>) (2.1K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.71,
+      "highlight": "Latest: [Transformers v5.23.0](<https://github.com/huggingface/transformers/releases/tag/v5.23.0>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 3.28,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 15.4M, `@anthropic-ai/sdk` 11.9M, `openai` 10.0M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 7.25,
+      "highlight": "Latest: [dbt Core v1.12.7](<https://github.com/dbt-labs/dbt/releases/tag/v1.12.7>) (1d ago)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 19.21,
+      "highlight": "Yesterday: `pandas` 24.8M, `pyarrow` 14.6M, `openai` 14.4M, `mcp` 12.3M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.21,
+      "highlight": "Most pulled since the last run: `library/postgres` (+26.5M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 18,
+      "seconds": 0.16,
+      "highlight": "Top: [Crunchy Bridge vs ClickHouse Managed Postgres for AI Agents](<https://dev.to/database-engineering/crunchy-bridge-vs-clickhouse-managed-postgres-ai-agents-performance-and-pricing-202a>) (4 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.28,
+      "highlight": "Top: [Rust 1.100](<https://news.ycombinator.com/item?id=50472038>) (865 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 2.27,
+      "highlight": "Degraded: [GitHub: Partially Degraded Service](<https://www.githubstatus.com>); [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>); [Anthropic: Partially Degraded Service](<https://status.anthropic.com>); [OpenAI: Partial System Degradation](<https://status.openai.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.45,
+      "highlight": "12 added in the week to 2026-11-13. Newest: [CVE-2026-123039](<https://nvd.nist.gov/vuln/detail/CVE-2026-123039>) (Check Point Multiple Products)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.14,
+      "highlight": "Most read: [Jensen Huang](<https://en.wikipedia.org/wiki/Jensen_Huang>) (1.1M), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (735.4K), [Colette Kress](<https://en.wikipedia.org/wiki/Colette_Kress>) (463.9K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 2.72,
+      "highlight": "Dallas 19°C / 10°C, overcast. Hottest: Mumbai (ap-south-1) 34°C. Coldest: Dublin (eu-west-1) 1°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.48,
+      "highlight": "Worst air: Tokyo (AQI 154). Cleanest: Columbus, OH (AQI 26)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 40,
+      "seconds": 0.09,
+      "highlight": "40 quakes of M2.5+ in 24h. Largest: [M5.8 79 km WSW of Changuillo, Peru](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty1a>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 6,
+      "seconds": 2.59,
+      "highlight": "6 open events: 3 wildfires, 3 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.33,
+      "highlight": "1 USD = 0.9048 EUR, 0.756 GBP, 94.25 INR, 160 JPY, 18.59 MXN (ECB, 2026-11-13)",
+      "error": null
+    }
+  ]
+}
