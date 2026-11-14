@@ -1,0 +1,13 @@
+{"days_since_release": 18, "published_at": "2026-10-27T00:24:15Z", "repo": "apache/spark", "tool": "Apache Spark", "url": "https://github.com/apache/spark/releases/tag/v4.3.0", "version": "v4.3.0"}
+{"days_since_release": 8, "published_at": "2026-11-06T13:08:22Z", "repo": "apache/airflow", "tool": "Apache Airflow", "url": "https://github.com/apache/airflow/releases/tag/3.4.0", "version": "3.4.0"}
+{"days_since_release": 34, "published_at": "2026-10-11T02:31:51Z", "repo": "apache/kafka", "tool": "Apache Kafka", "url": "https://github.com/apache/kafka/releases/tag/4.3.2", "version": "4.3.2"}
+{"days_since_release": 153, "published_at": "2026-06-14T14:29:03Z", "repo": "apache/flink", "tool": "Apache Flink", "url": "https://github.com/apache/flink/releases/tag/release-2.3.0", "version": "release-2.3.0"}
+{"days_since_release": 45, "published_at": "2026-09-30T01:52:18Z", "repo": "apache/iceberg", "tool": "Apache Iceberg", "url": "https://github.com/apache/iceberg/releases/tag/apache-iceberg-1.12.0", "version": "apache-iceberg-1.12.0"}
+{"days_since_release": 11, "published_at": "2026-11-03T08:52:12Z", "repo": "apache/arrow", "tool": "Apache Arrow", "url": "https://github.com/apache/arrow/releases/tag/apache-arrow-26.0.1", "version": "apache-arrow-26.0.1"}
+{"days_since_release": 40, "published_at": "2026-10-05T23:25:36Z", "repo": "delta-io/delta", "tool": "Delta Lake", "url": "https://github.com/delta-io/delta/releases/tag/v4.4.1", "version": "v4.4.1"}
+{"days_since_release": 2, "published_at": "2026-11-12T09:53:01Z", "repo": "dbt-labs/dbt-core", "tool": "dbt Core", "url": "https://github.com/dbt-labs/dbt/releases/tag/v1.12.7", "version": "v1.12.7"}
+{"days_since_release": 24, "published_at": "2026-10-21T12:49:12Z", "repo": "duckdb/duckdb", "tool": "DuckDB", "url": "https://github.com/duckdb/duckdb/releases/tag/v2.0.0", "version": "v2.0.0"}
+{"days_since_release": 20, "published_at": "2026-10-25T18:24:39Z", "repo": "pola-rs/polars", "tool": "Polars", "url": "https://github.com/pola-rs/polars/releases/tag/py-2.1.0", "version": "py-2.1.0"}
+{"days_since_release": 29, "published_at": "2026-10-16T00:08:12Z", "repo": "trinodb/trino", "tool": "Trino", "url": "https://github.com/trinodb/trino/releases/tag/484", "version": "484"}
+{"days_since_release": 0, "published_at": "2026-11-14T13:24:48Z", "repo": "ClickHouse/ClickHouse", "tool": "ClickHouse", "url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.28.166-stable", "version": "v26.9.28.166-stable"}
+{"days_since_release": 2, "published_at": "2026-11-12T21:04:51Z", "repo": "dagster-io/dagster", "tool": "Dagster", "url": "https://github.com/dagster-io/dagster/releases/tag/1.13.30", "version": "1.13.30"}

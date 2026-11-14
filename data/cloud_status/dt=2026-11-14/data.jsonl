@@ -1,0 +1,8 @@
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "GitHub", "status": "All Systems Operational", "url": "https://www.githubstatus.com"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "Snowflake", "status": "All Systems Operational", "url": "https://status.snowflake.com"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "Confluent Cloud", "status": "All Systems Operational", "url": "https://status.confluent.cloud"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "dbt Cloud", "status": "All Systems Operational", "url": "https://status.getdbt.com"}
+{"incident_titles": ["Changes to Cloudflare Workers are not producing Event Subscription events"], "indicator": "minor", "open_incidents": 1, "provider": "Cloudflare", "status": "Partially Degraded Service", "url": "https://www.cloudflarestatus.com"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "Vercel", "status": "All Systems Operational", "url": "https://www.vercel-status.com"}
+{"incident_titles": ["Some users unable to sign up with Apple on the Claude iOS app"], "indicator": "minor", "open_incidents": 1, "provider": "Anthropic", "status": "Partially Degraded Service", "url": "https://status.anthropic.com"}
+{"incident_titles": ["Delayed Costs Data in the Compliance API"], "indicator": "minor", "open_incidents": 1, "provider": "OpenAI", "status": "Partial System Degradation", "url": "https://status.openai.com"}

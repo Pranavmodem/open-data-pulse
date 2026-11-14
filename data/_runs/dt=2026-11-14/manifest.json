@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-14",
+  "finished_at": "2026-11-14T18:47:52+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.58,
+      "highlight": "30 new papers. Newest: [Internalizing Investment Mandates: A Neurosymbolic RL Approach to Portfolio Allocation](<https://arxiv.org/abs/2611.17329v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.28,
+      "highlight": "Top: [SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models](<https://huggingface.co/papers/2611.15777>) (133 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.23,
+      "highlight": "#1: [xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic](<https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic>) (text-generation, 7.3K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.23,
+      "highlight": "#1: [Angais/pixel-art-atlas-1.4m](<https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m>) (57.6K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 471,
+      "seconds": 0.2,
+      "highlight": "471 models. Newest: inclusionAI: Ling 3.2 Flash (free) (1.0M context, $0 in / $0 out per 1M tokens)",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 4.27,
+      "highlight": "Top new repo: [FrigadeHQ/yogurt](<https://github.com/FrigadeHQ/yogurt>) (1.4K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.56,
+      "highlight": "Latest: [LangGraph 1.2.22](<https://github.com/langchain-ai/langgraph/releases/tag/1.2.22>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.18,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 14.3M, `@anthropic-ai/sdk` 11.3M, `openai` 9.3M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 5.64,
+      "highlight": "Latest: [ClickHouse v26.9.28.166-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.28.166-stable>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 18.87,
+      "highlight": "Yesterday: `pandas` 24.2M, `pyarrow` 14.4M, `openai` 13.6M, `mcp` 12.0M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.48,
+      "highlight": "Most pulled since the last run: `library/postgres` (+17.0M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 18,
+      "seconds": 0.13,
+      "highlight": "Top: [Crunchy Bridge vs ClickHouse Managed Postgres for AI Agents](<https://dev.to/database-engineering/crunchy-bridge-vs-clickhouse-managed-postgres-ai-agents-performance-and-pricing-202a>) (4 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.25,
+      "highlight": "Top: [Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs](<https://news.ycombinator.com/item?id=50493251>) (970 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.56,
+      "highlight": "Degraded: [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>); [Anthropic: Partially Degraded Service](<https://status.anthropic.com>); [OpenAI: Partial System Degradation](<https://status.openai.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.21,
+      "highlight": "12 added in the week to 2026-11-13. Newest: [CVE-2026-123039](<https://nvd.nist.gov/vuln/detail/CVE-2026-123039>) (Check Point Multiple Products)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.13,
+      "highlight": "Most read: [Jensen Huang](<https://en.wikipedia.org/wiki/Jensen_Huang>) (727.5K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (618.7K), [.xxx](<https://en.wikipedia.org/wiki/.xxx>) (486.9K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "failed",
+      "rows": 0,
+      "seconds": 134.14,
+      "highlight": "",
+      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>"
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.67,
+      "highlight": "Worst air: Mumbai (AQI 242). Cleanest: Dallas (AQI 25)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 51,
+      "seconds": 0.05,
+      "highlight": "51 quakes of M2.5+ in 24h. Largest: [M5.5 northern Mid-Atlantic Ridge](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty84>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.49,
+      "highlight": "11 open events: 6 sea and lake ice, 3 wildfires, 2 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.1,
+      "highlight": "1 USD = 0.9048 EUR, 0.756 GBP, 94.25 INR, 160 JPY, 18.59 MXN (ECB, 2026-11-13)",
+      "error": null
+    }
+  ]
+}
