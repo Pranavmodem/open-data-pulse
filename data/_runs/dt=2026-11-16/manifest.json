@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-16",
+  "finished_at": "2026-11-16T22:56:23+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.6,
+      "highlight": "30 new papers. Newest: [Training Reasoning Models in Simulation to Natively Use Real Robots](<https://arxiv.org/abs/2611.18562v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.32,
+      "highlight": "Top: [Envisioning Agentic Robotics: A New Era of Robotic Systems](<https://huggingface.co/papers/2611.18359>) (107 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.15,
+      "highlight": "#1: [xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic](<https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic>) (text-generation, 8.6K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.15,
+      "highlight": "#1: [Angais/pixel-art-atlas-1.4m](<https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m>) (63.4K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 470,
+      "seconds": 0.09,
+      "highlight": "470 models, 3 new since the last run: Tencent: Hy4 flash, Qwen: Qwen4 Max, Z.ai: GLM 5.2 (batch)",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 4.36,
+      "highlight": "Top new repo: [hitkeeen/blender-ai-mcp-addon](<https://github.com/hitkeeen/blender-ai-mcp-addon>) (2.2K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 2.88,
+      "highlight": "Latest: [LangChain langchain-core==1.8.1](<https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.1>) (1d ago)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.03,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 8.0M, `@anthropic-ai/sdk` 6.9M, `openai` 5.5M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 4.69,
+      "highlight": "Latest: [ClickHouse v26.9.30.7-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.30.7-stable>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 67.99,
+      "highlight": "Yesterday: `pandas` 17.5M, `openai` 9.1M, `mcp` 7.9M, `langchain` 4.7M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.64,
+      "highlight": "Most pulled since the last run: `library/postgres` (+30.4M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.2,
+      "highlight": "Top: [Use dedicated IAM roles for every data pipeline job](<https://dev.to/aniketsoni/use-dedicated-iam-roles-for-every-data-pipeline-job-2jh9>) (1 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.44,
+      "highlight": "Top: [Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings](<https://news.ycombinator.com/item?id=50517488>) (779 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.99,
+      "highlight": "Degraded: [dbt Cloud: Partial System Outage](<https://status.getdbt.com>); [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>); [Anthropic: Partially Degraded Service](<https://status.anthropic.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.23,
+      "highlight": "12 added in the week to 2026-11-13. Newest: [CVE-2026-123039](<https://nvd.nist.gov/vuln/detail/CVE-2026-123039>) (Check Point Multiple Products)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.19,
+      "highlight": "Most read: [Archive of Our Own](<https://en.wikipedia.org/wiki/Archive_of_Our_Own>) (860.7K), [9/11](<https://en.wikipedia.org/wiki/9/11>) (673.0K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (591.7K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 66.54,
+      "highlight": "Dallas 18°C / 8°C, overcast. Hottest: Mumbai (ap-south-1) 33°C. Coldest: Ashburn, VA (us-east-1) 0°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.62,
+      "highlight": "Worst air: Mumbai (AQI 163). Cleanest: Frankfurt (AQI 20)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 33,
+      "seconds": 0.07,
+      "highlight": "33 quakes of M2.5+ in 24h. Largest: [M6.6 148 km WSW of Tual, Indonesia](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000tymu>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 0.52,
+      "highlight": "16 open events: 8 wildfires, 6 sea and lake ice, 2 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.2,
+      "highlight": "1 USD = 0.9079 EUR, 0.7577 GBP, 93.93 INR, 159.6 JPY, 18.56 MXN (ECB, 2026-11-16)",
+      "error": null
+    }
+  ]
+}
