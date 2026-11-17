@@ -1,0 +1,11 @@
+{"image": "library/postgres", "last_updated": "2026-11-15T22:07:40.996098Z", "pull_count": 12520598839, "pulls_since_last_run": 27686289, "star_count": 15056}
+{"image": "library/redis", "last_updated": "2026-11-16T00:05:21.728634Z", "pull_count": 11700571352, "pulls_since_last_run": 10225167, "star_count": 13635}
+{"image": "apache/airflow", "last_updated": "2026-11-06T12:42:38.907072Z", "pull_count": 1740536194, "pulls_since_last_run": 2368383, "star_count": 638}
+{"image": "apache/spark", "last_updated": "2026-11-06T00:15:15.168197Z", "pull_count": 31365763, "pulls_since_last_run": 36421, "star_count": 100}
+{"image": "apache/kafka", "last_updated": "2026-10-22T09:48:05.326078Z", "pull_count": 56709248, "pulls_since_last_run": 403727, "star_count": 225}
+{"image": "confluentinc/cp-kafka", "last_updated": "2026-11-10T01:04:19.610629Z", "pull_count": 376284606, "pulls_since_last_run": 374660, "star_count": 544}
+{"image": "library/flink", "last_updated": "2026-11-16T21:00:45.216918Z", "pull_count": 98122795, "pulls_since_last_run": 24049, "star_count": 468}
+{"image": "clickhouse/clickhouse-server", "last_updated": "2026-11-17T21:44:30.893206Z", "pull_count": 356531325, "pulls_since_last_run": 1735537, "star_count": 280}
+{"image": "trinodb/trino", "last_updated": "2026-10-16T00:28:16.394847Z", "pull_count": 30365976, "pulls_since_last_run": 95302, "star_count": 86}
+{"image": "apache/superset", "last_updated": "2026-11-16T16:13:00.550552Z", "pull_count": 609330039, "pulls_since_last_run": 49247, "star_count": 332}
+{"image": "ollama/ollama", "last_updated": "2026-11-16T18:07:31.684164Z", "pull_count": 201847267, "pulls_since_last_run": 423306, "star_count": 1621}

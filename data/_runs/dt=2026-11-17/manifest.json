@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-17",
+  "finished_at": "2026-11-17T21:48:37+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.35,
+      "highlight": "30 new papers. Newest: [ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization](<https://arxiv.org/abs/2611.21605v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.16,
+      "highlight": "Top: [Sage S2.1 Flash Technical Report](<https://huggingface.co/papers/2611.21072>) (85 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.08,
+      "highlight": "#1: [MiniMaxAI/MiniMax-H3-Image](<https://huggingface.co/MiniMaxAI/MiniMax-H3-Image>) (text-to-image, 1.4K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.08,
+      "highlight": "#1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (24.0K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 474,
+      "seconds": 0.16,
+      "highlight": "474 models, 4 new since the last run: OpenAI: GPT-6.2 Astra Pro, OpenAI: GPT-6.2 Astra, OpenAI: GPT-6.2 Sol Pro and 1 more",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.21,
+      "highlight": "Top new repo: [FrigadeHQ/yogurt](<https://github.com/FrigadeHQ/yogurt>) (2.0K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.19,
+      "highlight": "Latest: [Pydantic AI v2.69.0](<https://github.com/pydantic/pydantic-ai/releases/tag/v2.69.0>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 2.63,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 14.8M, `@anthropic-ai/sdk` 11.7M, `openai` 9.8M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 6.37,
+      "highlight": "Latest: [ClickHouse v26.9.31.21-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.31.21-stable>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 18.2,
+      "highlight": "Yesterday: `pandas` 24.0M, `openai` 14.4M, `pyarrow` 13.8M, `mcp` 12.9M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.24,
+      "highlight": "Most pulled since the last run: `library/postgres` (+27.7M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.18,
+      "highlight": "Top: [I Built a Serverless OLAP Engine in the Browser with DuckDB-WASM (No AWS, $0)](<https://dev.to/dayan_elvisjahuirapilco/i-built-a-serverless-olap-engine-in-the-browser-with-duckdb-wasm-no-aws-0-n27>) (20 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.31,
+      "highlight": "Top: [New Evidence Shows School Phone Bans Are Gradually Improving Test Scores](<https://news.ycombinator.com/item?id=50530163>) (1076 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 2.05,
+      "highlight": "Degraded: [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>); [Anthropic: Partially Degraded Service](<https://status.anthropic.com>); [OpenAI: Partial System Degradation](<https://status.openai.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.21,
+      "highlight": "3 added in the week to 2026-11-17. Newest: [CVE-2026-115731](<https://nvd.nist.gov/vuln/detail/CVE-2026-115731>) (Perforce Puppet Enterprise)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.14,
+      "highlight": "Most read: [Robert Pattinson](<https://en.wikipedia.org/wiki/Robert_Pattinson>) (1.4M), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (551.9K), [Archive of Our Own](<https://en.wikipedia.org/wiki/Archive_of_Our_Own>) (463.7K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.24,
+      "highlight": "Dallas 18°C / 5°C, clear. Hottest: Mumbai (ap-south-1) 35°C. Coldest: Columbus, OH (us-east-2) -3°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.49,
+      "highlight": "Worst air: Mumbai (AQI 164). Cleanest: Dublin (AQI 26)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 45,
+      "seconds": 0.09,
+      "highlight": "45 quakes of M2.5+ in 24h. Largest: [M5.2 south of the Kermadec Islands](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000tysq>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 15,
+      "seconds": 1.99,
+      "highlight": "15 open events: 7 wildfires, 6 sea and lake ice, 2 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.3,
+      "highlight": "1 USD = 0.91 EUR, 0.7581 GBP, 93.48 INR, 159.3 JPY, 18.46 MXN (ECB, 2026-11-17)",
+      "error": null
+    }
+  ]
+}
