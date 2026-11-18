@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-18",
+  "finished_at": "2026-11-18T21:28:00+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.46,
+      "highlight": "30 new papers. Newest: [Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models](<https://arxiv.org/abs/2611.23228v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.15,
+      "highlight": "Top: [TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks](<https://huggingface.co/papers/2611.22115>) (149 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.12,
+      "highlight": "#1: [higurashi-ai/Haru-4B](<https://huggingface.co/higurashi-ai/Haru-4B>) (audio-to-audio, 657 likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.12,
+      "highlight": "#1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (25.6K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 479,
+      "seconds": 0.11,
+      "highlight": "479 models, 5 new since the last run: Google: Gemini 4 Neon, OpenAI: GPT-6.2 Astra Pro (batch), OpenAI: GPT-6.2 Astra (batch) and 2 more",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 4.86,
+      "highlight": "Top new repo: [erkamyaman/rust-anything](<https://github.com/erkamyaman/rust-anything>) (3.2K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 2.94,
+      "highlight": "Latest: [LangChain langchain-core==1.8.3](<https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.3>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 2.15,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 15.8M, `@anthropic-ai/sdk` 12.4M, `openai` 10.6M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 4.76,
+      "highlight": "Latest: [ClickHouse v26.9.32.8-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.32.8-stable>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 17.49,
+      "highlight": "Yesterday: `pandas` 26.0M, `openai` 15.7M, `pyarrow` 15.2M, `mcp` 13.7M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 0.88,
+      "highlight": "Most pulled since the last run: `library/postgres` (+28.9M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.19,
+      "highlight": "Top: [Building a self-updating weather pipeline for 15 Nigerian cities](<https://dev.to/initysl/building-a-self-updating-weather-pipeline-for-15-nigerian-cities-227k>) (1 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.34,
+      "highlight": "Top: [Unauthenticated remote code execution in Nginx](<https://news.ycombinator.com/item?id=50547374>) (832 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.4,
+      "highlight": "Degraded: [Confluent Cloud: Service Under Maintenance](<https://status.confluent.cloud>); [dbt Cloud: Partial System Degradation](<https://status.getdbt.com>); [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>); [Vercel: Minor Service Outage](<https://www.vercel-status.com>); [Anthropic: Partially Degraded Service](<https://status.anthropic.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.35,
+      "highlight": "7 added in the week to 2026-11-18. Newest: [CVE-2026-90817](<https://nvd.nist.gov/vuln/detail/CVE-2026-90817>) (Vanderbilt University Research Electronic Data Capture (REDCa…)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.18,
+      "highlight": "Most read: [Robert Pattinson](<https://en.wikipedia.org/wiki/Robert_Pattinson>) (841.0K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (452.3K), [Suki Waterhouse](<https://en.wikipedia.org/wiki/Suki_Waterhouse>) (297.0K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.16,
+      "highlight": "Dallas 22°C / 7°C, mostly clear. Hottest: Mumbai (ap-south-1) 32°C. Coldest: Ashburn, VA (us-east-1) -2°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.46,
+      "highlight": "Worst air: São Paulo (AQI 192). Cleanest: Frankfurt (AQI 27)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 40,
+      "seconds": 0.03,
+      "highlight": "40 quakes of M2.5+ in 24h. Largest: [M6.1 Pacific-Antarctic Ridge](<https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz37>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 14,
+      "seconds": 0.42,
+      "highlight": "14 open events: 6 wildfires, 6 sea and lake ice, 2 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.42,
+      "highlight": "1 USD = 0.9117 EUR, 0.7594 GBP, 93.44 INR, 159.4 JPY, 18.58 MXN (ECB, 2026-11-18)",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "GitHub", "status": "All Systems Operational", "url": "https://www.githubstatus.com"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "Snowflake", "status": "All Systems Operational", "url": "https://status.snowflake.com"}
+{"incident_titles": ["New Confluent Cloud account sign-ups temporarily unavailable"], "indicator": "maintenance", "open_incidents": 1, "provider": "Confluent Cloud", "status": "Service Under Maintenance", "url": "https://status.confluent.cloud"}
+{"incident_titles": ["Increased job run times for some accounts"], "indicator": "minor", "open_incidents": 1, "provider": "dbt Cloud", "status": "Partial System Degradation", "url": "https://status.getdbt.com"}
+{"incident_titles": ["Increased latency on Analytics API (GraphQL) queries", "Changes to Cloudflare Workers are not producing Event Subscription events"], "indicator": "minor", "open_incidents": 2, "provider": "Cloudflare", "status": "Partially Degraded Service", "url": "https://www.cloudflarestatus.com"}
+{"incident_titles": ["Delays in observability data"], "indicator": "minor", "open_incidents": 1, "provider": "Vercel", "status": "Minor Service Outage", "url": "https://www.vercel-status.com"}
+{"incident_titles": ["Claude unable to join meetings"], "indicator": "minor", "open_incidents": 1, "provider": "Anthropic", "status": "Partially Degraded Service", "url": "https://status.anthropic.com"}
+{"incident_titles": [], "indicator": "none", "open_incidents": 0, "provider": "OpenAI", "status": "All Systems Operational", "url": "https://status.openai.com"}
