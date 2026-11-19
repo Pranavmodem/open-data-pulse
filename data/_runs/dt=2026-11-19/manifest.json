@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-19",
+  "finished_at": "2026-11-19T21:38:46+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.47,
+      "highlight": "30 new papers. Newest: [Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems](<https://arxiv.org/abs/2611.24932v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.2,
+      "highlight": "Top: [Jeveration: System One Models Now Generate](<https://huggingface.co/papers/2611.24738>) (110 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.16,
+      "highlight": "#1: [higurashi-ai/Haru-4B](<https://huggingface.co/higurashi-ai/Haru-4B>) (audio-to-audio, 3.6K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.16,
+      "highlight": "#1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (27.4K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 479,
+      "seconds": 0.08,
+      "highlight": "479 models, 1 new since the last run: Google: Gemini 4 Neon (batch)",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 4.77,
+      "highlight": "Top new repo: [erkamyaman/rust-anything](<https://github.com/erkamyaman/rust-anything>) (5.0K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 2.77,
+      "highlight": "Latest: [LangGraph 1.2.23](<https://github.com/langchain-ai/langgraph/releases/tag/1.2.23>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.48,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 16.5M, `@anthropic-ai/sdk` 12.8M, `openai` 10.7M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 4.72,
+      "highlight": "Latest: [ClickHouse v26.9.33.10-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.33.10-stable>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 23.17,
+      "highlight": "Yesterday: `pandas` 26.3M, `pyarrow` 15.8M, `openai` 15.2M, `mcp` 12.7M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.55,
+      "highlight": "Most pulled since the last run: `library/postgres` (+29.9M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.2,
+      "highlight": "Top: [Attention Is Not All You Need](<https://dev.to/shek_bake_1eda6ed9b79f7a1/attention-is-not-all-you-need-2lnm>) (1 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.31,
+      "highlight": "Top: [Garage Door Spam](<https://news.ycombinator.com/item?id=50519231>) (656 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.81,
+      "highlight": "Degraded: [dbt Cloud: Partial System Outage](<https://status.getdbt.com>); [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.47,
+      "highlight": "7 added in the week to 2026-11-18. Newest: [CVE-2026-90817](<https://nvd.nist.gov/vuln/detail/CVE-2026-90817>) (Vanderbilt University Research Electronic Data Capture (REDCa…)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.17,
+      "highlight": "Most read: [Grand Theft Auto VI](<https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI>) (519.6K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (410.3K), [Robert Pattinson](<https://en.wikipedia.org/wiki/Robert_Pattinson>) (337.5K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.09,
+      "highlight": "Dallas 24°C / 10°C, overcast. Hottest: Mumbai (ap-south-1) 31°C. Coldest: Columbus, OH (us-east-2) -2°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.62,
+      "highlight": "Worst air: Mumbai (AQI 150). Cleanest: Boardman, OR (AQI 19)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 35,
+      "seconds": 0.11,
+      "highlight": "35 quakes of M2.5+ in 24h. Largest: [M5.3 South Georgia Island region](<https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc2q>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 0.57,
+      "highlight": "11 open events: 6 sea and lake ice, 3 wildfires, 2 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.3,
+      "highlight": "1 USD = 0.9097 EUR, 0.7604 GBP, 93.3 INR, 160 JPY, 18.92 MXN (ECB, 2026-11-19)",
+      "error": null
+    }
+  ]
+}
