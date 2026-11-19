@@ -31,20 +31,36 @@ query($owner: String!, $name: String!) {
 """
 
 
-def collect(items: Iterable[T], fetch_one: Callable[[T], dict | None]) -> list[dict]:
-    """Fetch each item on its own so one bad item is skipped; fail only if every item fails."""
+def collect(items: Iterable[T], fetch_one: Callable[[T], dict | None],
+            on_error: Callable[[str], None] | None = None) -> list[dict]:
+    """Fetch each item on its own so one bad item is skipped; fail only if every item fails.
+
+    Every item that fails is reported through `on_error` (sources pass `self.note_failure`),
+    so a run that lost 5 of 16 packages can say so instead of returning a shorter list that
+    looks complete.
+    """
     rows, errors = [], []
     for item in items:
         try:
             row = fetch_one(item)
         except Exception as exc:
-            errors.append(f"{item}: {type(exc).__name__}: {exc}")
+            message = f"{_label(item)}: {type(exc).__name__}: {exc}"[:300]
+            errors.append(message)
+            if on_error is not None:
+                on_error(message)
             continue
         if row:
             rows.append(row)
     if errors and not rows:
         raise RuntimeError("; ".join(errors)[:300])
     return rows
+
+
+def _label(item: object) -> str:
+    """A short name for an item: `(provider, url)` tuples read better as just the provider."""
+    if isinstance(item, tuple) and item:
+        return str(item[0])
+    return str(item)
 
 
 def latest_release(name: str, repo: str, day: date) -> dict:

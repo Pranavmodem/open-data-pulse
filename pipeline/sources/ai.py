@@ -219,7 +219,7 @@ class AiFrameworkReleases(Source):
     }
 
     def fetch(self, ctx: Context) -> list[dict]:
-        return collect(self.REPOS.items(), lambda item: latest_release(*item, ctx.day))
+        return collect(self.REPOS.items(), lambda item: latest_release(*item, ctx.day), on_error=self.note_failure)
 
     def highlight(self, rows):
         return release_highlight(rows)
@@ -243,7 +243,7 @@ class AiSdkDownloads(Source):
             d = http.get_json(f"https://api.npmjs.org/downloads/point/last-day/{package}")
             return {"package": package, "downloads": d["downloads"], "day": d["end"]}
 
-        return sorted(collect(self.PACKAGES, one), key=lambda r: r["downloads"], reverse=True)
+        return sorted(collect(self.PACKAGES, one, on_error=self.note_failure), key=lambda r: r["downloads"], reverse=True)
 
     def highlight(self, rows):
         return "Most downloaded: " + ", ".join(f"`{r['package']}` {number(r['downloads'])}" for r in rows[:3])
