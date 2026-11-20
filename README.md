@@ -9,42 +9,42 @@ A small data pipeline that takes a daily snapshot of 21 public feeds: AI researc
 
 A GitHub Actions job runs it every morning. It fetches the feeds in parallel, retries what fails, writes one date-partitioned JSONL file per feed, records a run manifest, and rebuilds this README.
 
-**Last run:** 2026-11-19 21:38 UTC
+**Last run:** 2026-11-20 21:13 UTC
 
 ## Today's digest
 
 ### AI and agents
 
-- **arXiv agent papers**: 30 new papers. Newest: [Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems](<https://arxiv.org/abs/2611.24932v1>)
-- **Hugging Face daily papers**: Top: [Jeveration: System One Models Now Generate](<https://huggingface.co/papers/2611.24738>) (110 upvotes)
-- **Hugging Face trending models**: #1: [higurashi-ai/Haru-4B](<https://huggingface.co/higurashi-ai/Haru-4B>) (audio-to-audio, 3.6K likes)
-- **Hugging Face trending datasets**: #1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (27.4K downloads)
-- **LLM catalog and prices**: 479 models, 1 new since the last run: Google: Gemini 4 Neon (batch)
-- **New agent and MCP repos**: Top new repo: [erkamyaman/rust-anything](<https://github.com/erkamyaman/rust-anything>) (5.0K stars in under a week)
-- **Agent framework releases**: Latest: [LangGraph 1.2.23](<https://github.com/langchain-ai/langgraph/releases/tag/1.2.23>) (today)
-- **AI SDK downloads (npm)**: Most downloaded: `@modelcontextprotocol/sdk` 16.5M, `@anthropic-ai/sdk` 12.8M, `openai` 10.7M
+- **arXiv agent papers**: 30 new papers. Newest: [PlayCraft: Designing Engaging Games from Agent Play Experience](<https://arxiv.org/abs/2611.26624v1>)
+- **Hugging Face daily papers**: Top: [WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](<https://huggingface.co/papers/2611.21373>) (48 upvotes)
+- **Hugging Face trending models**: #1: [higurashi-ai/Haru-4B](<https://huggingface.co/higurashi-ai/Haru-4B>) (audio-to-audio, 5.0K likes)
+- **Hugging Face trending datasets**: #1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (28.1K downloads)
+- **LLM catalog and prices**: 476 models, 1 new since the last run: Mistral: Pixtral Large 2502
+- **New agent and MCP repos**: Top new repo: [erkamyaman/rust-anything](<https://github.com/erkamyaman/rust-anything>) (6.5K stars in under a week)
+- **Agent framework releases**: Latest: [LangGraph 1.2.24](<https://github.com/langchain-ai/langgraph/releases/tag/1.2.24>) (today)
+- **AI SDK downloads (npm)**: Most downloaded: `@modelcontextprotocol/sdk` 16.3M, `@anthropic-ai/sdk` 12.5M, `openai` 10.4M
 
 ### Data engineering
 
-- **Data tool releases**: Latest: [ClickHouse v26.9.33.10-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.33.10-stable>) (today)
-- **Python package downloads**: Yesterday: `pandas` 26.3M, `pyarrow` 15.8M, `openai` 15.2M, `mcp` 12.7M
-- **Docker image pulls**: Most pulled since the last run: `library/postgres` (+29.9M)
-- **Data engineering articles**: Top: [Attention Is Not All You Need](<https://dev.to/shek_bake_1eda6ed9b79f7a1/attention-is-not-all-you-need-2lnm>) (1 reactions)
+- **Data tool releases**: Latest: [DuckDB v2.0.1](<https://github.com/duckdb/duckdb/releases/tag/v2.0.1>) (today)
+- **Python package downloads**: Yesterday: `pandas` 25.6M, `pyarrow` 15.5M, `openai` 14.8M, `mcp` 12.6M
+- **Docker image pulls**: Most pulled since the last run: `library/postgres` (+27.1M)
+- **Data engineering articles**: Top: [PostgreSQL 19 removes the MultiXact members wall. Reclamation still waits for template0.](<https://dev.to/firfircelik/postgresql-19-removes-the-multixact-members-wall-reclamation-still-waits-for-template0-1ele>) (1 reactions)
 
 ### Tech pulse
 
-- **Hacker News front page**: Top: [Garage Door Spam](<https://news.ycombinator.com/item?id=50519231>) (656 points)
-- **Platform status**: Degraded: [dbt Cloud: Partial System Outage](<https://status.getdbt.com>); [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>)
-- **Known exploited vulnerabilities**: 7 added in the week to 2026-11-18. Newest: [CVE-2026-90817](<https://nvd.nist.gov/vuln/detail/CVE-2026-90817>) (Vanderbilt University Research Electronic Data Capture (REDCa…)
-- **Most-read Wikipedia articles**: Most read: [Grand Theft Auto VI](<https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI>) (519.6K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (410.3K), [Robert Pattinson](<https://en.wikipedia.org/wiki/Robert_Pattinson>) (337.5K)
+- **Hacker News front page**: Top: [Levent Alpöge claims proof of the Generalized Riemann Hypothesis \[pdf\]](<https://news.ycombinator.com/item?id=50574968>) (2061 points)
+- **Platform status**: Degraded: [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>)
+- **Known exploited vulnerabilities**: 9 added in the week to 2026-11-20. Newest: [CVE-2026-76466](<https://nvd.nist.gov/vuln/detail/CVE-2026-76466>) (Cisco Expressway Series)
+- **Most-read Wikipedia articles**: Most read: [Grand Theft Auto VI](<https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI>) (750.2K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (371.6K), [Stephen Wilson Jr.](<https://en.wikipedia.org/wiki/Stephen_Wilson_Jr.>) (328.0K)
 
 ### World signals
 
-- **Weather in cloud-region cities**: Dallas 24°C / 10°C, overcast. Hottest: Mumbai (ap-south-1) 31°C. Coldest: Columbus, OH (us-east-2) -2°C
-- **Air quality in cloud-region cities**: Worst air: Mumbai (AQI 150). Cleanest: Boardman, OR (AQI 19)
-- **Earthquakes**: 35 quakes of M2.5+ in 24h. Largest: [M5.3 South Georgia Island region](<https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc2q>)
-- **Natural hazards**: 11 open events: 6 sea and lake ice, 3 wildfires, 2 severe storms
-- **Exchange rates**: 1 USD = 0.9097 EUR, 0.7604 GBP, 93.3 INR, 160 JPY, 18.92 MXN (ECB, 2026-11-19)
+- **Weather in cloud-region cities**: Dallas 23°C / 12°C, overcast. Hottest: São Paulo (sa-east-1) 34°C. Coldest: Ashburn, VA (us-east-1) -0°C
+- **Air quality in cloud-region cities**: Worst air: São Paulo (AQI 182). Cleanest: Frankfurt (AQI 19)
+- **Earthquakes**: 48 quakes of M2.5+ in 24h. Largest: [M5.6 southeast of the Loyalty Islands](<https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc4v>)
+- **Natural hazards**: 8 open events: 6 wildfires, 2 severe storms
+- **Exchange rates**: 1 USD = 0.9099 EUR, 0.7619 GBP, 92.68 INR, 158.6 JPY, 19.07 MXN (ECB, 2026-11-20)
 
 ## Sources
 
@@ -54,7 +54,7 @@ A GitHub Actions job runs it every morning. It fetches the feeds in parallel, re
 | [`hf_daily_papers`](data/hf_daily_papers) | Papers the Hugging Face community picked today, with upvotes and linked code. [↗](<https://huggingface.co/papers>) | 50 | ✅ ok |
 | [`hf_trending_models`](data/hf_trending_models) | The 30 models trending on the Hugging Face Hub. [↗](<https://huggingface.co/models?sort=trending>) | 30 | ✅ ok |
 | [`hf_trending_datasets`](data/hf_trending_datasets) | The 30 datasets trending on the Hugging Face Hub. [↗](<https://huggingface.co/datasets?sort=trending>) | 30 | ✅ ok |
-| [`llm_catalog`](data/llm_catalog) | Every model on OpenRouter with context window and price per million tokens; flags new models. [↗](<https://openrouter.ai/models>) | 479 | ✅ ok |
+| [`llm_catalog`](data/llm_catalog) | Every model on OpenRouter with context window and price per million tokens; flags new models. [↗](<https://openrouter.ai/models>) | 476 | ✅ ok |
 | [`github_agent_repos`](data/github_agent_repos) | Repos created this week under agent and MCP topics on GitHub, ranked by stars. [↗](<https://github.com/topics/ai-agents>) | 30 | ✅ ok |
 | [`ai_framework_releases`](data/ai_framework_releases) | Latest release of the main agent, LLM-serving and model frameworks. [↗](<https://github.com/>) | 13 | ✅ ok |
 | [`ai_sdk_downloads`](data/ai_sdk_downloads) | Yesterday's npm downloads for the main LLM and agent SDKs. [↗](<https://www.npmjs.com/>) | 11 | ✅ ok |
@@ -68,8 +68,8 @@ A GitHub Actions job runs it every morning. It fetches the feeds in parallel, re
 | [`wikipedia_top_pages`](data/wikipedia_top_pages) | Yesterday's 25 most-viewed English Wikipedia articles, from the Wikimedia pageviews API. [↗](<https://wikimedia.org/api/rest_v1/>) | 25 | ✅ ok |
 | [`cloud_region_weather`](data/cloud_region_weather) | Today's forecast for Dallas and the cities behind nine major AWS regions. [↗](<https://open-meteo.com/>) | 10 | ✅ ok |
 | [`air_quality`](data/air_quality) | Current US AQI, PM2.5, PM10 and ozone for the same cities. [↗](<https://open-meteo.com/en/docs/air-quality-api>) | 10 | ✅ ok |
-| [`earthquakes`](data/earthquakes) | Every magnitude 2.5+ earthquake in the past 24 hours, from the USGS feed. [↗](<https://earthquake.usgs.gov/earthquakes/feed/>) | 35 | ✅ ok |
-| [`natural_events`](data/natural_events) | Open wildfires, storms, volcanoes and other events NASA EONET tracked this week. [↗](<https://eonet.gsfc.nasa.gov/>) | 11 | ✅ ok |
+| [`earthquakes`](data/earthquakes) | Every magnitude 2.5+ earthquake in the past 24 hours, from the USGS feed. [↗](<https://earthquake.usgs.gov/earthquakes/feed/>) | 48 | ✅ ok |
+| [`natural_events`](data/natural_events) | Open wildfires, storms, volcanoes and other events NASA EONET tracked this week. [↗](<https://eonet.gsfc.nasa.gov/>) | 8 | ✅ ok |
 | [`fx_rates`](data/fx_rates) | European Central Bank reference rates against the US dollar. [↗](<https://frankfurter.dev/>) | 29 | ✅ ok |
 
 ## Pipeline health
@@ -78,6 +78,7 @@ Last 14 runs, newest first.
 
 | Date | Sources ok | Rows | Failed |
 | --- | ---: | ---: | --- |
+| 2026-11-20 | 21/21 | 918 | none |
 | 2026-11-19 | 21/21 | 911 | none |
 | 2026-11-18 | 21/21 | 919 | none |
 | 2026-11-17 | 21/21 | 920 | none |
@@ -91,7 +92,6 @@ Last 14 runs, newest first.
 | 2026-11-09 | 21/21 | 906 | none |
 | 2026-11-08 | 21/21 | 887 | none |
 | 2026-11-07 | 21/21 | 884 | none |
-| 2026-11-06 | 21/21 | 871 | none |
 
 ## How it works
 

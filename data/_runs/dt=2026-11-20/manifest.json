@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-20",
+  "finished_at": "2026-11-20T21:13:33+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.51,
+      "highlight": "30 new papers. Newest: [PlayCraft: Designing Engaging Games from Agent Play Experience](<https://arxiv.org/abs/2611.26624v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.17,
+      "highlight": "Top: [WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](<https://huggingface.co/papers/2611.21373>) (48 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.13,
+      "highlight": "#1: [higurashi-ai/Haru-4B](<https://huggingface.co/higurashi-ai/Haru-4B>) (audio-to-audio, 5.0K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.12,
+      "highlight": "#1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (28.1K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 476,
+      "seconds": 0.07,
+      "highlight": "476 models, 1 new since the last run: Mistral: Pixtral Large 2502",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.06,
+      "highlight": "Top new repo: [erkamyaman/rust-anything](<https://github.com/erkamyaman/rust-anything>) (6.5K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.56,
+      "highlight": "Latest: [LangGraph 1.2.24](<https://github.com/langchain-ai/langgraph/releases/tag/1.2.24>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.11,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 16.3M, `@anthropic-ai/sdk` 12.5M, `openai` 10.4M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 5.93,
+      "highlight": "Latest: [DuckDB v2.0.1](<https://github.com/duckdb/duckdb/releases/tag/v2.0.1>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 20.44,
+      "highlight": "Yesterday: `pandas` 25.6M, `pyarrow` 15.5M, `openai` 14.8M, `mcp` 12.6M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.32,
+      "highlight": "Most pulled since the last run: `library/postgres` (+27.1M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.2,
+      "highlight": "Top: [PostgreSQL 19 removes the MultiXact members wall. Reclamation still waits for template0.](<https://dev.to/firfircelik/postgresql-19-removes-the-multixact-members-wall-reclamation-still-waits-for-template0-1ele>) (1 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.25,
+      "highlight": "Top: [Levent Alpöge claims proof of the Generalized Riemann Hypothesis \\[pdf\\]](<https://news.ycombinator.com/item?id=50574968>) (2061 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.51,
+      "highlight": "Degraded: [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.29,
+      "highlight": "9 added in the week to 2026-11-20. Newest: [CVE-2026-76466](<https://nvd.nist.gov/vuln/detail/CVE-2026-76466>) (Cisco Expressway Series)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.02,
+      "highlight": "Most read: [Grand Theft Auto VI](<https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI>) (750.2K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (371.6K), [Stephen Wilson Jr.](<https://en.wikipedia.org/wiki/Stephen_Wilson_Jr.>) (328.0K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.07,
+      "highlight": "Dallas 23°C / 12°C, overcast. Hottest: São Paulo (sa-east-1) 34°C. Coldest: Ashburn, VA (us-east-1) -0°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.62,
+      "highlight": "Worst air: São Paulo (AQI 182). Cleanest: Frankfurt (AQI 19)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 48,
+      "seconds": 0.03,
+      "highlight": "48 quakes of M2.5+ in 24h. Largest: [M5.6 southeast of the Loyalty Islands](<https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc4v>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 3.38,
+      "highlight": "8 open events: 6 wildfires, 2 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.06,
+      "highlight": "1 USD = 0.9099 EUR, 0.7619 GBP, 92.68 INR, 158.6 JPY, 19.07 MXN (ECB, 2026-11-20)",
+      "error": null
+    }
+  ]
+}
