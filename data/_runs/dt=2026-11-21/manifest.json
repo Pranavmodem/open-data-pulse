@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-21",
+  "finished_at": "2026-11-21T20:08:54+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 1.41,
+      "highlight": "30 new papers. Newest: [PlayCraft: Designing Engaging Games from Agent Play Experience](<https://arxiv.org/abs/2611.26624v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.19,
+      "highlight": "Top: [WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](<https://huggingface.co/papers/2611.21373>) (52 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.15,
+      "highlight": "#1: [thinkingmachines/Inkling-2-Mini](<https://huggingface.co/thinkingmachines/Inkling-2-Mini>) (image-text-to-text, 2.1K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.16,
+      "highlight": "#1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (28.7K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 476,
+      "seconds": 0.14,
+      "highlight": "476 models, 2 new since the last run: Thinking Machines: Inkling 2 Mini, RadixArk: DaisyRose 27B",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 5.72,
+      "highlight": "Top new repo: [erkamyaman/rust-anything](<https://github.com/erkamyaman/rust-anything>) (7.3K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 4.17,
+      "highlight": "Latest: [Transformers v5.24.0](<https://github.com/huggingface/transformers/releases/tag/v5.24.0>) (today)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.66,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 14.1M, `@anthropic-ai/sdk` 11.3M, `openai` 9.5M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 6.82,
+      "highlight": "Latest: [ClickHouse v26.9.35.9-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.35.9-stable>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 20.11,
+      "highlight": "Yesterday: `pandas` 24.3M, `pyarrow` 14.4M, `openai` 13.3M, `mcp` 11.4M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.54,
+      "highlight": "Most pulled since the last run: `library/postgres` (+17.9M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 0.17,
+      "highlight": "Top: [What Changes in Apache Iceberg v4? Some Thoughts After Reading the Spec](<https://dev.to/aws-builders/what-changes-in-apache-iceberg-v4-some-thoughts-after-reading-the-spec-jlf>) (7 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.25,
+      "highlight": "Top: [Levent Alpöge claims proof of the Generalized Riemann Hypothesis \\[pdf\\]](<https://news.ycombinator.com/item?id=50574968>) (2840 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 2.81,
+      "highlight": "Degraded: [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.19,
+      "highlight": "9 added in the week to 2026-11-20. Newest: [CVE-2026-76466](<https://nvd.nist.gov/vuln/detail/CVE-2026-76466>) (Cisco Expressway Series)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.12,
+      "highlight": "Most read: [Grand Theft Auto VI](<https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI>) (540.8K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (329.2K), [Riemann hypothesis](<https://en.wikipedia.org/wiki/Riemann_hypothesis>) (295.2K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 32.37,
+      "highlight": "Dallas 22°C / 16°C, overcast. Hottest: Singapore (ap-southeast-1) 33°C. Coldest: Boardman, OR (us-west-2) -0°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.56,
+      "highlight": "Worst air: Mumbai (AQI 206). Cleanest: Dublin (AQI 37)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 43,
+      "seconds": 0.08,
+      "highlight": "43 quakes of M2.5+ in 24h. Largest: [M6.8 105 km NE of Lospalos, Timor Leste](<https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucij>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 0.51,
+      "highlight": "16 open events: 8 sea and lake ice, 6 wildfires, 2 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.14,
+      "highlight": "1 USD = 0.9099 EUR, 0.7619 GBP, 92.68 INR, 158.6 JPY, 19.07 MXN (ECB, 2026-11-20)",
+      "error": null
+    }
+  ]
+}
