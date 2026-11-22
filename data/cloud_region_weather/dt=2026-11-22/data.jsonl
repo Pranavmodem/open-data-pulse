@@ -1,0 +1,10 @@
+{"city": "Dallas", "conditions": "overcast", "date": "2026-11-22", "precipitation_mm": 0.0, "region": "DFW", "temp_max_c": 20.2, "temp_min_c": 8.1, "wind_max_kmh": 22.1}
+{"city": "Ashburn, VA", "conditions": "overcast", "date": "2026-11-22", "precipitation_mm": 0.0, "region": "us-east-1", "temp_max_c": 18.4, "temp_min_c": 10.7, "wind_max_kmh": 10.4}
+{"city": "Columbus, OH", "conditions": "drizzle", "date": "2026-11-22", "precipitation_mm": 0.7, "region": "us-east-2", "temp_max_c": 19.7, "temp_min_c": 4.7, "wind_max_kmh": 12.3}
+{"city": "Boardman, OR", "conditions": "drizzle", "date": "2026-11-22", "precipitation_mm": 1.9, "region": "us-west-2", "temp_max_c": 6.1, "temp_min_c": 1.8, "wind_max_kmh": 12.3}
+{"city": "São Paulo", "conditions": "thunderstorms", "date": "2026-11-22", "precipitation_mm": 13.2, "region": "sa-east-1", "temp_max_c": 30.7, "temp_min_c": 20.6, "wind_max_kmh": 16.3}
+{"city": "Dublin", "conditions": "drizzle", "date": "2026-11-22", "precipitation_mm": 3.6, "region": "eu-west-1", "temp_max_c": 10.3, "temp_min_c": 8.3, "wind_max_kmh": 24.5}
+{"city": "Frankfurt", "conditions": "fog", "date": "2026-11-22", "precipitation_mm": 0.0, "region": "eu-central-1", "temp_max_c": 3.1, "temp_min_c": -1.6, "wind_max_kmh": 10.5}
+{"city": "Mumbai", "conditions": "mostly clear", "date": "2026-11-23", "precipitation_mm": 0.0, "region": "ap-south-1", "temp_max_c": 34.7, "temp_min_c": 22.6, "wind_max_kmh": 13.0}
+{"city": "Singapore", "conditions": "thunderstorms", "date": "2026-11-23", "precipitation_mm": 14.0, "region": "ap-southeast-1", "temp_max_c": 31.6, "temp_min_c": 24.1, "wind_max_kmh": 8.1}
+{"city": "Tokyo", "conditions": "clear", "date": "2026-11-23", "precipitation_mm": 0.0, "region": "ap-northeast-1", "temp_max_c": 13.3, "temp_min_c": 4.3, "wind_max_kmh": 5.2}
