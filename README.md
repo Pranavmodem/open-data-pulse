@@ -9,42 +9,42 @@ A small data pipeline that takes a daily snapshot of 21 public feeds: AI researc
 
 A GitHub Actions job runs it every morning. It fetches the feeds in parallel, retries what fails, writes one date-partitioned JSONL file per feed, records a run manifest, and rebuilds this README.
 
-**Last run:** 2026-11-22 20:23 UTC
+**Last run:** 2026-11-24 00:58 UTC
 
 ## Today's digest
 
 ### AI and agents
 
-- **arXiv agent papers**: 30 new papers. Newest: [PlayCraft: Designing Engaging Games from Agent Play Experience](<https://arxiv.org/abs/2611.26624v1>)
-- **Hugging Face daily papers**: Top: [WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](<https://huggingface.co/papers/2611.21373>) (56 upvotes)
-- **Hugging Face trending models**: #1: [thinkingmachines/Inkling-2-Mini](<https://huggingface.co/thinkingmachines/Inkling-2-Mini>) (image-text-to-text, 4.8K likes)
-- **Hugging Face trending datasets**: #1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (30.3K downloads)
-- **LLM catalog and prices**: 476 models. Newest: Thinking Machines: Inkling 2 Mini (1.0M context, $0.075 in / $0.3 out per 1M tokens)
-- **New agent and MCP repos**: Top new repo: [erkamyaman/rust-anything](<https://github.com/erkamyaman/rust-anything>) (7.9K stars in under a week)
-- **Agent framework releases**: Latest: [Transformers v5.24.0](<https://github.com/huggingface/transformers/releases/tag/v5.24.0>) (1d ago)
-- **AI SDK downloads (npm)**: Most downloaded: `@modelcontextprotocol/sdk` 8.4M, `@anthropic-ai/sdk` 7.3M, `openai` 5.9M
+- **arXiv agent papers**: 30 new papers. Newest: [SUAF: Spectral Universal Advantage Features for Zero-Shot Policy Improvement](<https://arxiv.org/abs/2611.27919v1>)
+- **Hugging Face daily papers**: Top: [cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction](<https://huggingface.co/papers/2611.27193>) (91 upvotes)
+- **Hugging Face trending models**: #1: [thinkingmachines/Inkling-2-Mini](<https://huggingface.co/thinkingmachines/Inkling-2-Mini>) (image-text-to-text, 5.5K likes)
+- **Hugging Face trending datasets**: #1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (31.7K downloads)
+- **LLM catalog and prices**: 476 models, 1 new since the last run: Dots Studio: Dots3-Note Preview (free)
+- **New agent and MCP repos**: Top new repo: [EL4CTEO/fast-anything](<https://github.com/EL4CTEO/fast-anything>) (3.1K stars in under a week)
+- **Agent framework releases**: Latest: [Pydantic AI v2.72.0](<https://github.com/pydantic/pydantic-ai/releases/tag/v2.72.0>) (today)
+- **AI SDK downloads (npm)**: Most downloaded: `@modelcontextprotocol/sdk` 8.0M, `@anthropic-ai/sdk` 7.0M, `openai` 5.7M
 
 ### Data engineering
 
-- **Data tool releases**: Latest: [ClickHouse v26.9.36.3-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.36.3-stable>) (today)
-- **Python package downloads**: Yesterday: `pandas` 17.9M, `pyarrow` 10.3M, `openai` 10.3M, `mcp` 8.7M
-- **Docker image pulls**: Most pulled since the last run: `library/postgres` (+17.6M)
-- **Data engineering articles**: Top: [One Row Lied to the Whole Team](<https://dev.to/danielnadia/one-row-lied-to-the-whole-team-gbg>) (0 reactions)
+- **Data tool releases**: Latest: [ClickHouse v26.9.37.5-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.37.5-stable>) (1d ago)
+- **Python package downloads**: Yesterday: `pandas` 17.9M, `openai` 10.0M, `pyarrow` 10.0M, `mcp` 9.1M
+- **Docker image pulls**: Most pulled since the last run: `library/postgres` (+32.3M)
+- **Data engineering articles**: Top: [Best Data Modeling Tools for Google BigQuery: SQLDBM, dbt, Dataform & Looker Compared](<https://dev.to/nikoshachi/best-data-modeling-tools-for-google-bigquery-sqldbm-dbt-dataform-looker-compared-418f>) (0 reactions)
 
 ### Tech pulse
 
-- **Hacker News front page**: Top: [Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'](<https://news.ycombinator.com/item?id=50582069>) (1301 points)
-- **Platform status**: Degraded: [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>)
-- **Known exploited vulnerabilities**: 9 added in the week to 2026-11-20. Newest: [CVE-2026-76466](<https://nvd.nist.gov/vuln/detail/CVE-2026-76466>) (Cisco Expressway Series)
-- **Most-read Wikipedia articles**: Most read: [Grand Theft Auto VI](<https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI>) (393.3K), [Riemann hypothesis](<https://en.wikipedia.org/wiki/Riemann_hypothesis>) (388.3K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (357.4K)
+- **Hacker News front page**: Top: [Nvidia Reinstates Jensen Huang as CEO](<https://news.ycombinator.com/item?id=50611576>) (2028 points)
+- **Platform status**: Degraded: [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>); [Anthropic: Partially Degraded Service](<https://status.anthropic.com>)
+- **Known exploited vulnerabilities**: 11 added in the week to 2026-11-23. Newest: [CVE-2026-134624](<https://nvd.nist.gov/vuln/detail/CVE-2026-134624>) (N-able MailAssure)
+- **Most-read Wikipedia articles**: Most read: [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (384.2K), [Grand Theft Auto VI](<https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI>) (308.9K), [Tom Jackson (American football, born 1951)](<https://en.wikipedia.org/wiki/Tom_Jackson_%28American_football%2C_born_1951%29>) (264.0K)
 
 ### World signals
 
-- **Weather in cloud-region cities**: Dallas 20°C / 8°C, overcast. Hottest: Mumbai (ap-south-1) 35°C. Coldest: Frankfurt (eu-central-1) -2°C
-- **Air quality in cloud-region cities**: Worst air: Mumbai (AQI 173). Cleanest: Boardman, OR (AQI 18)
-- **Earthquakes**: 28 quakes of M2.5+ in 24h. Largest: [M5.4 224 km NE of Bitung, Indonesia](<https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucrb>)
-- **Natural hazards**: 16 open events: 8 sea and lake ice, 6 wildfires, 2 severe storms
-- **Exchange rates**: 1 USD = 0.9099 EUR, 0.7619 GBP, 92.68 INR, 158.6 JPY, 19.07 MXN (ECB, 2026-11-20)
+- **Weather in cloud-region cities**: Dallas 14°C / 7°C, fog. Hottest: Mumbai (ap-south-1) 34°C. Coldest: Frankfurt (eu-central-1) -4°C
+- **Air quality in cloud-region cities**: Worst air: Mumbai (AQI 166). Cleanest: Dallas (AQI 24)
+- **Earthquakes**: 47 quakes of M2.5+ in 24h. Largest: [M6.5 Vanuatu region](<https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucvm>)
+- **Natural hazards**: 14 open events: 8 sea and lake ice, 4 wildfires, 2 severe storms
+- **Exchange rates**: 1 USD = 0.9142 EUR, 0.7649 GBP, 92.92 INR, 159.1 JPY, 19.25 MXN (ECB, 2026-11-23)
 
 ## Sources
 
@@ -61,15 +61,15 @@ A GitHub Actions job runs it every morning. It fetches the feeds in parallel, re
 | [`data_tool_releases`](data/data_tool_releases) | Latest stable release of the core lakehouse, streaming, orchestration and query engines. [↗](<https://github.com/>) | 13 | ✅ ok |
 | [`pypi_downloads`](data/pypi_downloads) | Daily, weekly and monthly PyPI downloads for data and AI libraries. [↗](<https://pypistats.org/>) | 16 | ✅ ok |
 | [`docker_pulls`](data/docker_pulls) | Total Docker Hub pulls for data-platform images, with the change since the last run. [↗](<https://hub.docker.com/>) | 11 | ✅ ok |
-| [`devto_data_engineering`](data/devto_data_engineering) | Today's top dev.to articles tagged dataengineering. [↗](<https://dev.to/t/dataengineering>) | 13 | ✅ ok |
+| [`devto_data_engineering`](data/devto_data_engineering) | Today's top dev.to articles tagged dataengineering. [↗](<https://dev.to/t/dataengineering>) | 20 | ✅ ok |
 | [`hackernews_front_page`](data/hackernews_front_page) | The 30 stories on the Hacker News front page at snapshot time. [↗](<https://news.ycombinator.com/>) | 30 | ✅ ok |
 | [`cloud_status`](data/cloud_status) | Live status and open incidents for the data and AI platforms teams depend on. [↗](<https://www.atlassian.com/software/statuspage>) | 8 | ✅ ok |
 | [`cisa_kev`](data/cisa_kev) | The 20 newest entries in CISA's catalog of vulnerabilities exploited in the wild. [↗](<https://www.cisa.gov/known-exploited-vulnerabilities-catalog>) | 20 | ✅ ok |
 | [`wikipedia_top_pages`](data/wikipedia_top_pages) | Yesterday's 25 most-viewed English Wikipedia articles, from the Wikimedia pageviews API. [↗](<https://wikimedia.org/api/rest_v1/>) | 25 | ✅ ok |
 | [`cloud_region_weather`](data/cloud_region_weather) | Today's forecast for Dallas and the cities behind nine major AWS regions. [↗](<https://open-meteo.com/>) | 10 | ✅ ok |
 | [`air_quality`](data/air_quality) | Current US AQI, PM2.5, PM10 and ozone for the same cities. [↗](<https://open-meteo.com/en/docs/air-quality-api>) | 10 | ✅ ok |
-| [`earthquakes`](data/earthquakes) | Every magnitude 2.5+ earthquake in the past 24 hours, from the USGS feed. [↗](<https://earthquake.usgs.gov/earthquakes/feed/>) | 28 | ✅ ok |
-| [`natural_events`](data/natural_events) | Open wildfires, storms, volcanoes and other events NASA EONET tracked this week. [↗](<https://eonet.gsfc.nasa.gov/>) | 16 | ✅ ok |
+| [`earthquakes`](data/earthquakes) | Every magnitude 2.5+ earthquake in the past 24 hours, from the USGS feed. [↗](<https://earthquake.usgs.gov/earthquakes/feed/>) | 47 | ✅ ok |
+| [`natural_events`](data/natural_events) | Open wildfires, storms, volcanoes and other events NASA EONET tracked this week. [↗](<https://eonet.gsfc.nasa.gov/>) | 14 | ✅ ok |
 | [`fx_rates`](data/fx_rates) | European Central Bank reference rates against the US dollar. [↗](<https://frankfurter.dev/>) | 29 | ✅ ok |
 
 ## Pipeline health
@@ -78,6 +78,7 @@ Last 14 runs, newest first.
 
 | Date | Sources ok | Rows | Failed |
 | --- | ---: | ---: | --- |
+| 2026-11-24 | 21/21 | 923 | none |
 | 2026-11-22 | 21/21 | 899 | none |
 | 2026-11-21 | 21/21 | 917 | none |
 | 2026-11-20 | 21/21 | 918 | none |
@@ -91,7 +92,6 @@ Last 14 runs, newest first.
 | 2026-11-12 | 21/21 | 901 | none |
 | 2026-11-11 | 21/21 | 894 | none |
 | 2026-11-10 | 21/21 | 907 | none |
-| 2026-11-09 | 21/21 | 906 | none |
 
 ## How it works
 
