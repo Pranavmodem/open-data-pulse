@@ -5,8 +5,9 @@ from __future__ import annotations
 import json
 import os
 import time
+from collections.abc import Sequence
 from concurrent.futures import ThreadPoolExecutor
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -32,6 +33,7 @@ class Source:
     category: str
     description: str
     homepage: str
+    failures: list[str]  # populated during a run by note_failure()
 
     def fetch(self, ctx: Context) -> list[dict]:
         raise NotImplementedError
@@ -40,34 +42,63 @@ class Source:
         """One line of Markdown for the README digest."""
         return ""
 
+    def note_failure(self, message: str) -> None:
+        """Record one item that failed inside a multi-item fetch.
+
+        `collect()` calls this so a source that lost 5 of its 16 items says so instead of
+        reporting a clean run with a shorter list. The runner reads the recorded messages
+        back through `failures` and marks the whole source `partial`.
+        """
+        self.__dict__.setdefault("failures", []).append(message)
+
 
 @dataclass
 class Result:
     source: str
-    status: str  # ok | empty | failed
+    status: str  # ok | partial | empty | failed
     rows: int
     seconds: float
     highlight: str = ""
     error: str | None = None
+    errors: list[str] = field(default_factory=list)  # items that failed inside the source
+    expected: int | None = None  # rows + failed items, when the fetch is item-based
 
 
 def run_source(source: Source, ctx: Context) -> Result:
     """Fetch one source and write its partition. Never raises: a failure becomes a 'failed' result."""
     start = time.monotonic()
+    source.__dict__.pop("failures", None)  # a rerun in the same process starts clean
     try:
         rows = source.fetch(ctx)
         if rows:
             write_partition(ctx.data_dir, source.name, ctx.day, rows)
+        else:
+            remove_partition(ctx.data_dir, source.name, ctx.day)
     except Exception as exc:  # one broken feed must not stop the others
         return Result(source.name, "failed", 0, _since(start), error=f"{type(exc).__name__}: {exc}"[:300])
     try:
         highlight = source.highlight(rows) if rows else ""
     except Exception:
         highlight = ""
-    return Result(source.name, "ok" if rows else "empty", len(rows), _since(start), highlight)
+    errors: list[str] = list(getattr(source, "failures", []))
+    status = _status(rows, errors)
+    return Result(
+        source.name, status, len(rows), _since(start), highlight,
+        error="; ".join(errors)[:300] if errors and not rows else None,
+        errors=errors,
+        expected=len(rows) + len(errors) if errors else None,
+    )
 
 
-def run_all(sources: list[Source], ctx: Context, workers: int = 6) -> list[Result]:
+def _status(rows: list[dict], errors: list[str]) -> str:
+    """ok = everything worked, partial = some items failed but rows were written, failed = nothing came back."""
+    if rows:
+        return "partial" if errors else "ok"
+    return "failed" if errors else "empty"
+
+
+
+def run_all(sources: Sequence[Source], ctx: Context, workers: int = 6) -> list[Result]:
     with ThreadPoolExecutor(max_workers=workers) as pool:
         return list(pool.map(lambda s: run_source(s, ctx), sources))
 
@@ -80,10 +111,20 @@ def write_partition(data_dir: Path, source: str, day: date, rows: list[dict]) ->
     return path
 
 
+def remove_partition(data_dir: Path, source: str, day: date) -> None:
+    """Drop a day's rows when a rerun returns none, so a stale file never outlives the run that wrote it."""
+    path = data_dir / source / f"dt={day}" / "data.jsonl"
+    path.unlink(missing_ok=True)
+    try:
+        path.parent.rmdir()  # only removes the day folder when it is now empty
+    except OSError:
+        pass
+
+
 def read_jsonl(path: Path) -> list[dict]:
     if not path.exists():
         return []
-    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
 def manifest_path(data_dir: Path, day: date) -> Path:
@@ -105,7 +146,7 @@ def write_manifest(data_dir: Path, day: date, results: list[Result], order: list
 
 
 def read_manifest(path: Path) -> dict:
-    return json.loads(path.read_text()) if path.exists() else {}
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
 def recent_manifests(data_dir: Path, limit: int) -> list[dict]:
@@ -117,7 +158,7 @@ def recent_manifests(data_dir: Path, limit: int) -> list[dict]:
 def _atomic_write(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(text)
+    tmp.write_text(text, encoding="utf-8")
     os.replace(tmp, path)
 
 
