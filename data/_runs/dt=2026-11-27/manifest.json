@@ -1,0 +1,174 @@
+{
+  "run_date": "2026-11-27",
+  "finished_at": "2026-11-27T22:02:59+00:00",
+  "results": [
+    {
+      "source": "arxiv_agent_papers",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.37,
+      "highlight": "30 new papers. Newest: [Attack Policy Selection can Mislead Monitor Evaluators](<https://arxiv.org/abs/2611.34934v1>)",
+      "error": null
+    },
+    {
+      "source": "hf_daily_papers",
+      "status": "ok",
+      "rows": 50,
+      "seconds": 0.15,
+      "highlight": "Top: [Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability](<https://huggingface.co/papers/2611.34051>) (126 upvotes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_models",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.11,
+      "highlight": "#1: [thinkingmachines/Inkling-2-Mini](<https://huggingface.co/thinkingmachines/Inkling-2-Mini>) (image-text-to-text, 6.5K likes)",
+      "error": null
+    },
+    {
+      "source": "hf_trending_datasets",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.13,
+      "highlight": "#1: [Vyber07/cyber-security](<https://huggingface.co/datasets/Vyber07/cyber-security>) (110.9K downloads)",
+      "error": null
+    },
+    {
+      "source": "llm_catalog",
+      "status": "ok",
+      "rows": 476,
+      "seconds": 0.12,
+      "highlight": "476 models, 1 new since the last run: inclusionAI: Ling 3.2 Flash",
+      "error": null
+    },
+    {
+      "source": "github_agent_repos",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 3.97,
+      "highlight": "Top new repo: [EL4CTEO/fast-anything](<https://github.com/EL4CTEO/fast-anything>) (4.4K stars in under a week)",
+      "error": null
+    },
+    {
+      "source": "ai_framework_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 2.25,
+      "highlight": "Latest: [Pydantic AI v2.76.0](<https://github.com/pydantic/pydantic-ai/releases/tag/v2.76.0>) (1d ago)",
+      "error": null
+    },
+    {
+      "source": "ai_sdk_downloads",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 1.81,
+      "highlight": "Most downloaded: `@modelcontextprotocol/sdk` 12.8M, `@anthropic-ai/sdk` 10.2M, `openai` 8.5M",
+      "error": null
+    },
+    {
+      "source": "data_tool_releases",
+      "status": "ok",
+      "rows": 13,
+      "seconds": 3.72,
+      "highlight": "Latest: [ClickHouse v26.9.41.4-stable](<https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.41.4-stable>) (today)",
+      "error": null
+    },
+    {
+      "source": "pypi_downloads",
+      "status": "ok",
+      "rows": 16,
+      "seconds": 21.18,
+      "highlight": "Yesterday: `pandas` 24.7M, `pyarrow` 13.4M, `openai` 13.1M, `mcp` 11.8M",
+      "error": null
+    },
+    {
+      "source": "docker_pulls",
+      "status": "ok",
+      "rows": 11,
+      "seconds": 0.74,
+      "highlight": "Most pulled since the last run: `library/postgres` (+23.0M)",
+      "error": null
+    },
+    {
+      "source": "devto_data_engineering",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.16,
+      "highlight": "Top: [Nvidia Halts Malaysia & SG AI Servers: ASEAN GPU Freeze Fix](<https://dev.to/asifmiqbal/nvidia-halts-malaysia-sg-ai-servers-asean-gpu-freeze-fix-2bn7>) (1 reactions)",
+      "error": null
+    },
+    {
+      "source": "hackernews_front_page",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 0.36,
+      "highlight": "Top: [AI made self-hosting fun again](<https://news.ycombinator.com/item?id=50660180>) (1060 points)",
+      "error": null
+    },
+    {
+      "source": "cloud_status",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 1.83,
+      "highlight": "Degraded: [Cloudflare: Partially Degraded Service](<https://www.cloudflarestatus.com>); [Anthropic: Partially Degraded Service](<https://status.anthropic.com>)",
+      "error": null
+    },
+    {
+      "source": "cisa_kev",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.27,
+      "highlight": "18 added in the week to 2026-11-27. Newest: [CVE-2026-136716](<https://nvd.nist.gov/vuln/detail/CVE-2026-136716>) (Drupal Core)",
+      "error": null
+    },
+    {
+      "source": "wikipedia_top_pages",
+      "status": "ok",
+      "rows": 25,
+      "seconds": 0.04,
+      "highlight": "Most read: [Andy Taylor (guitarist)](<https://en.wikipedia.org/wiki/Andy_Taylor_%28guitarist%29>) (318.4K), [Ramayana: Part 1](<https://en.wikipedia.org/wiki/Ramayana%3A_Part_1>) (256.7K), [Aaron Rodgers](<https://en.wikipedia.org/wiki/Aaron_Rodgers>) (183.0K)",
+      "error": null
+    },
+    {
+      "source": "cloud_region_weather",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.08,
+      "highlight": "Dallas 21°C / 1°C, clear. Hottest: Mumbai (ap-south-1) 33°C. Coldest: Frankfurt (eu-central-1) -2°C",
+      "error": null
+    },
+    {
+      "source": "air_quality",
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.43,
+      "highlight": "Worst air: Mumbai (AQI 157). Cleanest: Columbus, OH (AQI 15)",
+      "error": null
+    },
+    {
+      "source": "earthquakes",
+      "status": "ok",
+      "rows": 26,
+      "seconds": 0.1,
+      "highlight": "26 quakes of M2.5+ in 24h. Largest: [M5.1 107 km SSE of Auki, Solomon Islands](<https://earthquake.usgs.gov/earthquakes/eventpage/us6000udt9>)",
+      "error": null
+    },
+    {
+      "source": "natural_events",
+      "status": "ok",
+      "rows": 2,
+      "seconds": 2.8,
+      "highlight": "2 open events: 1 wildfires, 1 severe storms",
+      "error": null
+    },
+    {
+      "source": "fx_rates",
+      "status": "ok",
+      "rows": 29,
+      "seconds": 0.18,
+      "highlight": "1 USD = 0.9127 EUR, 0.7621 GBP, 93 INR, 159.5 JPY, 19.51 MXN (ECB, 2026-11-27)",
+      "error": null
+    }
+  ]
+}
